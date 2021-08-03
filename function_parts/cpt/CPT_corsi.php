@@ -1,22 +1,22 @@
-<?php 
+<?php
 /*-------------------------------------------------
-    ADD CUSTOM POST TYPE
+    ADD CUSTOM POST TYPE with custom TAXONOMY
 --------------------------------------------------*/
 
-    /*Replace = CPT*/
+    /*Replace = cpttaxonomy*/
 
-    function XY_custom_CPT() {
-        register_post_type('CPT',
+    function XY_custom_corsi() {
+        register_post_type( 'corsi',
             array(
                 'labels'                =>          array(
-                    'name'              =>          'CPT', //nome principale nella sidebar
-                    'singular_name'     =>          'CPT',
-                    'all_items'         =>          'Tutti i CPT', //nome link per visualizzare tutti i post
-                    'add_new'           =>          'Aggiungi nuovo CPT', //nome link per aggiungere nuovo post
-                    'add_new_item'      =>          'Aggiungi nuovo  CPT', //titolo della pagina di aggiunta di un nuovo post
-                    'edit_item'         =>          'Modifica CPT', //titolo della pagina di aggiunta di un nuovo post
-                    'new_item'          =>          'Nuovo CPT',
-                    'view_item'         =>          'Visualizza CPT',
+                    'name'              =>          'Corsi', //nome principale nella sidebar
+                    'singular_name'     =>          'Corsi',
+                    'all_items'         =>          'Tutti i Corsi', //nome link per visualizzare tutti i post
+                    'add_new'           =>          'Aggiungi nuovo Corsi', //nome link per aggiungere nuovo post
+                    'add_new_item'      =>          'Aggiungi nuovo  Corsi', //titolo della pagina di aggiunta di un nuovo post
+                    'edit_item'         =>          'Modifica corsi', //titolo della pagina di aggiunta di un nuovo post
+                    'new_item'          =>          'Nuovo corsi',
+                    'view_item'         =>          'Visualizza corsi',
                     'search_items'      =>          'Cerca', //testo nel pulsante di ricerca
                     'not_found'         =>          'Nessun elemento trovato',
                     'not_found_in_trash'=>          'Nessun elemento nel cestino',
@@ -31,7 +31,7 @@
                 'menu_position'         =>          20,
                 'menu_icon'             =>          'dashicons-carrot', //Dashicon
                 'rewrite'               =>          array(
-                    'slug'              =>          'CPT',
+                    'slug'              =>          'corsi',
                     'with-front'        =>          false,
                 ),
                 'has_archive'           =>          true,
@@ -43,15 +43,39 @@
             ), flush_rewrite_rules() /*fine delle opzioni*/
         );
     }
-    add_action('init', 'XY_custom_CPT');
+
+    // Inizializzazione della funzione
+    add_action( 'init', 'XY_custom_corsi');
+
+    //aggiunta categorie
+    function XY_corsi_taxonomies() {
+        register_taxonomy(
+            'categoria_tag',
+            'corsi',
+            array(
+                'labels' => array(
+                    'name' => 'Categoria',
+                    'add_new_item' => 'Aggiungi nuova categoria',
+                    'new_item_name' => "Nuova categoria"
+                ),
+                'show_ui' => true,
+                'show_tagcloud' => false,
+                'hierarchical' => true,
+                'show_admin_column' => true,
+                'show_in_rest' => true,
+            )
+        );
+
+    }
+
+    add_action( 'init', 'XY_corsi_taxonomies', 0 );
 
 
-    
     /*SHORTCODE
     -----------------------------*/
-    add_shortcode( 'CPT', 'XY_display_CPT_custom_post_type' );
+    add_shortcode( 'corsi', 'XY_display_corsi_custom_post_type' );
 
-    function XY_display_CPT_custom_post_type($atts){
+    function XY_display_corsi_custom_post_type($atts){
         ob_start();
         extract( shortcode_atts( array (
             'limit' => -1,
@@ -60,7 +84,7 @@
         ), $atts ) );
 
         $args = array(
-            'post_type'         => 'CPT',
+            'post_type'         => 'corsi',
             'post_status'       => 'publish',
             'orderby'           => 'count',
             'order'             => 'ASC',
@@ -82,7 +106,7 @@
         // STAMPA
         $XY_query = new WP_Query( $args );
         if( $XY_query->have_posts() ){ ?>
-            <section id="CPT" class="CPT">
+            <section id="corsi" class="corsi">
                 <div class="row">
                     <?php
                     // RICERCA POST NATIVI
@@ -96,7 +120,7 @@
                         <div class="col-12 col-md-4 mb-xl">
                             <img src="<?php echo get_the_post_thumbnail_url();?>" alt="<?php echo $thumbnail_alt ?>">
                             <h3><?php the_title(); ?></h3>
-                            <p><?php echo get_the_date("d/m/Y"); ?></p>
+                            <p><?php echo get_the_date(); ?></p>
                             <?php the_excerpt(); ?>
                             <a href="<?php the_permalink(); ?>" class="link">Apri CPT</a>
                         </div>
@@ -111,5 +135,7 @@
         return ob_get_clean();
         wp_reset_query();
     }
+
+
 
 ?>
