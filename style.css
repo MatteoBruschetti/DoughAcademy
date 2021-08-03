@@ -1,22 +1,9 @@
 /*
-Theme Name: 
-Theme URI: http://matteobruschetti.altervista.org
-Author: Matteo Bruschetti
-Author URI: http://matteobruschetti.altervista.org
-Description:    - ACF invece di Gutemberg per permettere al cliente la gestione totale dei contenuti ma non dello stile
-                - bootstrap grid 
-                - homepage displays a static page
-                - blog page for display articles
-                - dinamic navbar with custom menu
-                - custom post type
-                - contact mod in customize
-
-                TO ADD:
-                - responsive images
-                - dinamic footer with socail icon
-                - standard cookies e privacy policies
-                - dinamic logo in navbar
-                - navbar versione desktop senza hamburger 
+Theme Name: Sito Vetrina Statico con blog e cpt
+Theme URI: 
+Author: Matte e Fede
+Author URI: 
+Description:  
 */
 /*------------------------------------------------------------------------------
 HOSTING LOCAL FONTS with https://google-webfonts-helper.herokuapp.com/fonts/
@@ -30,7 +17,6 @@ h1 {
   letter-spacing: -1.5px;
   line-height: 110%;
   text-transform: uppercase;
-  text-align: center;
   color: #1D1D1F;
 }
 
@@ -40,7 +26,6 @@ h2 {
   letter-spacing: -1px;
   line-height: 110%;
   text-transform: uppercase;
-  text-align: center;
   color: #1D1D1F;
 }
 
@@ -48,7 +33,6 @@ h3 {
   font-size: 3rem;
   font-weight: 600;
   line-height: 110%;
-  text-align: left;
 }
 
 p {
@@ -301,9 +285,6 @@ img {
   width: 100%;
 }
 
-/*--------------------------------------------------
-BOOTSTRAP MEDIA-QUERIES 2021
-----------------------------------------------------*/
 body {
   overflow-x: hidden;
 }
@@ -640,67 +621,4 @@ footer .widget_nav_menu .menu-item.current_page_item a {
 RECCOMENDATIONS for target size by Apple
     DESKTOP and MOBILE minimun raget size = 44px X 44px 
 --------------------------------------------------*/
-/*Blocco ACF
-*Testo Immagine
------------------------------------------------*/
-.testo-immagine .row {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.testo-immagine h2 {
-  text-align: left;
-}
-
-.testo-immagine img {
-  width: 100%;
-}
-
-.destra .row {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
-@media (min-width: 768px) {
-  .destra .row .immagine {
-    padding: 0 0 0 30px;
-  }
-}
-
-@media (min-width: 768px) {
-  .sinistra .immagine {
-    padding: 0 30px 0 0;
-  }
-}
-
-.immagine-full-width .col-12 {
-  height: 75vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.citazione .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.citazione svg {
-  max-height: 20vh;
-}
-
-.citazione p {
-  font-size: 1.75rem;
-  font-weight: 700;
-}
 /*# sourceMappingURL=style.css.map */

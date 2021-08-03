@@ -4,17 +4,62 @@
 -------------------------------------------------------------------->
 <?php get_header(); ?>
 
-        <p>frontpage.php here</p>
+    <div class="container pb-s pt-s" >
 
-        <div class="container-fluid pb-s pt-s" style="background:rgb(153, 255, 153)">
-            <div class="row pb-s pt-s" style="background:rgba(255, 102, 0, 1)">
-                <div class="col-12 col-lg-6 mb-m" style="background:rgba(255, 255, 0, 0.5)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tenetur voluptatibus amet deserunt perferendis eveniet minus blanditiis tempora enim labore odio quia esse natus, iure nulla provident corporis quis. Voluptatibus.</div>
-                <div class="col-12 col-lg-6 mb-xxl" style="background:rgba(255, 255, 0, 0.5)">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tenetur voluptatibus amet deserunt perferendis eveniet minus blanditiis tempora enim labore odio quia esse natus, iure nulla provident corporis quis. Voluptatibus.
-                    <br>
-                    <a href="" class="btn mt-xs mb-s">Button</a>
+        <!--BLOCCO Testo immagine-->
+        <section class="testo-img">
+            <div class="row">
+                <div class="col-12 col-lg-6 immagine">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/4-3.png" alt="">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h2 class="mb-s">H2 here</h2>
+                    <p>P here</p> 
+                    <a class="btn mt-m" href="#">BTN here</a>
                 </div>
             </div>
-        </div>
+        </section>
+
+
+        <!--BLOCCO Titolo + paragrafo-->
+        <section class="titolo-paragrafo">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h2 class="mb-s">H2 here</h2>
+                    <p>P here</p> 
+                </div>
+            </div>
+        </section>
+
+        
+        <!--BLOCCO Keypoints img + titolo + p-->
+        <section class="keypoints">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/1-1.png" alt="">
+                    <h3 class="mb-s">H3 here</h3>
+                    <p>P here</p> 
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/1-1.png" alt="">
+                    <h3 class="mb-s">H3 here</h3>
+                    <p>P here</p> 
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/1-1.png" alt="">
+                    <h3 class="mb-s">H3 here</h3>
+                    <p>P here</p> 
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/1-1.png" alt="">
+                    <h3 class="mb-s">H3 here</h3>
+                    <p>P here</p> 
+                </div>
+            </div>
+        </section>
+
+
+
+    </div> <!--container-->
 
 <?php get_footer(); ?>

@@ -114,15 +114,15 @@
 
 
 
-/*FUNCTION PARTS
--------------------------------------------------*/
-require dirname(__FILE__).'/function_parts/acf_blocks.php';
-require dirname(__FILE__).'/function_parts/customizer.php';
-require dirname(__FILE__).'/function_parts/sidebars.php';
-require dirname(__FILE__).'/function_parts/customize_backend.php';
+    /*FUNCTION PARTS
+    -------------------------------------------------*/
+    require dirname(__FILE__).'/function_parts/customizer.php';
+    require dirname(__FILE__).'/function_parts/sidebars.php';
+    require dirname(__FILE__).'/function_parts/customize_backend.php';
 
-//CPT
-require dirname(__FILE__).'/function_parts/cpt/CPT.php';
-require dirname(__FILE__).'/function_parts/cpt/CPT_taxonomy.php';
+    //CPT
+    require dirname(__FILE__).'/function_parts/cpt/CPT.php';
+    require dirname(__FILE__).'/function_parts/cpt/CPT_taxonomy.php';
+    
 ?>
 
