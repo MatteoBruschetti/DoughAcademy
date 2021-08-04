@@ -99,12 +99,6 @@
 
     /*ADD
     --------------------------------------------*/
-    // ADD align Gutemberg
-    function nx_gutenberg_setup() {
-        add_theme_support( 'align-wide' );
-    }
-    add_action( 'after_setup_theme', 'nx_gutenberg_setup' );
-
     // ADD support to SVG upload
     function XY_svg_types($mimes) {
         $mimes['svg'] = 'image/svg+xml';
@@ -117,7 +111,6 @@
     /*FUNCTION PARTS
     -------------------------------------------------*/
     require dirname(__FILE__).'/function_parts/customizer.php';
-    require dirname(__FILE__).'/function_parts/sidebars.php';
     require dirname(__FILE__).'/function_parts/customize_backend.php';
 
     //CPT

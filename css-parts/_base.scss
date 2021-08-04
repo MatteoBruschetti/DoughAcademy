@@ -35,7 +35,7 @@ html{
 }
 
 body{
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: $font-secondary;
   background: $color-white;
 }
 ::selection{

@@ -1,0 +1,12 @@
+.social-bar{
+    a{
+        display: inline-block;
+
+        svg{
+            fill: $color-white;
+            width: 4rem; height: auto;
+
+            circle{fill: $color-primary;}
+        }
+    }
+}

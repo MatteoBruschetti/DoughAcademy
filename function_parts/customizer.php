@@ -4,41 +4,6 @@
 ----------------------------------------------------------------------------*/
 
     function XY_customize_register($wp_customize) {
-
-        /*Gestione del logo
-        --------------------------------*/
-        $wp_customize->add_section('XY_logo', array(
-            'title'       => __('Logo', 'nx'),
-            'description' => __('Tutte le specifiche del logo', 'nx'),
-            'priority'    => 20,
-          )
-        );
-        // Logo image
-        $wp_customize->add_setting('XY_logo_image_color', array('default' => ''));
-        $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'XY_logo_image_color', array(
-              'section' => 'XY_logo',
-              'label'   => __('Logo a colori', 'nx'),
-              'setting'    => 'XY_logo_image_color'
-            )
-          )
-        );
-        // Logo alt text
-        $wp_customize->add_setting('XY_logo_alt_text', array('default' => 'Logo of the site'));
-        $wp_customize->add_control('XY_logo_alt_text', array(
-            'section' => 'XY_logo',
-            'label'   => __('Alt text del logo ', 'nx'),
-            'type'    => 'text'
-          )
-        );
-        // Logo for footer
-        $wp_customize->add_setting('XY_logo_footer', array('default' => ''));
-        $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'XY_logo_footer', array(
-              'section' => 'XY_logo',
-              'label'   => __('Logo monocromatico per il footer', 'nx'),
-              'setting'    => 'XY_logo_footer'
-            )
-          )
-        );
         
 
         /*ADD SECTION FOR CONTACT INFO (utile se i contanti vengono ripetuti su più pagine poichè permette di modificarli tutti in una volta)
@@ -110,7 +75,17 @@
                     "type"          =>                  "url"
 
                 ));
+                
+            /*FIELD Youtube*/
+            $wp_customize -> add_setting("XY_social_youtube", array(
+                "default"           =>                  "Inserisci url della pagina Youtube"
+            ));
+                $wp_customize -> add_control("XY_social_youtube", array(
+                    "section"       =>                  "XY_contatti",
+                    "label"         =>                  "Youtube",
+                    "type"          =>                  "url"
 
+                ));
             
     }      
     add_action("customize_register", "XY_customize_register");
