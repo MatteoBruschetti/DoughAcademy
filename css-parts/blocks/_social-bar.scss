@@ -1,12 +1,23 @@
 .social-bar{
     a{
         display: inline-block;
-
+        
         svg{
             fill: $color-white;
             width: 4rem; height: auto;
+            transition: all 0.3s ease-in-out ;
 
-            circle{fill: $color-primary;}
+            circle{
+                fill: $color-primary;
+                transition: all 0.3s ease-in-out ;
+            }
+        }
+
+        &:hover{
+            svg{
+                fill: $color-primary;
+                circle{fill: $color-secondary;}
+            }
         }
     }
 }

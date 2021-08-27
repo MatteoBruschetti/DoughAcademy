@@ -4,7 +4,7 @@ jQuery(document).ready(function() {
     jQuery("#burger-icon").on('click', function() {
 
         //open pages
-        jQuery('.menu').toggleClass( "open" );
+        jQuery('.pannello-menu').toggleClass( "open" );
       
         //burger icon animation
         if (jQuery(this).hasClass( "out" )) {

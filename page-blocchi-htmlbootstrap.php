@@ -3,15 +3,34 @@
 -------------------------------------------------------------------->
 <?php get_header(); ?>
 
-    <div class="container pb-s pt-s" >
+    <div class="container pb-s pt-s">
+
+
+
+        <p style="color:red">BLOCCO Hero</p>    
+        <!--BLOCCO Hero-->
+        <section class="hero">
+            <div class="row align-items-center mb-xxl">
+                <div class="col-12">
+                    <p class="overtitle">Overtitle here</p> 
+                    <h1 class="mb-s">H1 here</h1>
+                    <p class="t-medium">
+                        P here. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu viverra diam, nec maximus est. Vestibulum condimentum turpis id ipsum volutpat, non gravida leo consequat. Sed mi libero, rutrum in maximus aliquet, sollicitudin nec nunc. Vestibulum vulputate diam vitae lobortis tempus.
+                    </p> 
+                    <a class="btn mt-m" href="#">BTN here</a>
+                </div>
+            </div>
+        </section>
+        <div class="img-background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/4-3.png');"></div>
 
 
 
         <p style="color:red">BLOCCO Testo immagine</p>    
         <!--BLOCCO Testo immagine-->
         <section class="testo-img">
-            <div class="row mb-xxl">
-                <div class="col-12 col-lg-6 immagine">
+            <div class="row align-items-center mb-xxl">
+                <div class="col-12 col-lg-6 mb-m immagine">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/4-3.png" alt="">
                 </div>
                 <div class="col-12 col-lg-6">
@@ -25,13 +44,13 @@
                 </div>
             </div>
         </section>
-
-
+        
+        
 
         <p style="color:red">BLOCCO Immagine testo</p>    
         <!--BLOCCO Immagine testo-->
         <section class="img-testo">
-            <div class="row mb-xxl">
+            <div class="row align-items-center mb-xxl">
                 <div class="col-12 col-lg-6">
                     <p class="overtitle">Overtitle here</p> 
                     <h2 class="mb-s">H2 here</h2>
@@ -39,7 +58,7 @@
                         P here. 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu viverra diam, nec maximus est. Vestibulum condimentum turpis id ipsum volutpat, non gravida leo consequat. Sed mi libero, rutrum in maximus aliquet, sollicitudin nec nunc. Vestibulum vulputate diam vitae lobortis tempus.
                     </p> 
-                    <a class="btn mt-m" href="#">BTN here</a>
+                    <a class="btn mt-m mb-m" href="#">BTN here</a>
                 </div>
                 <div class="col-12 col-lg-6 immagine">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/4-3.png" alt="">
@@ -122,6 +141,29 @@
                 </div>
                 <div class="col-12">
                     <a class="link mt-m" href="#">LINK here</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <p style="color:red">BLOCCO Gallery</p>
+        <!--BLOCCO Gallery-->
+        <section class="gallery">
+            <div class="row mb-xxl">
+                <div class="col-lg-4" style="background:yellow;">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/3-4.png" alt="">
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-6" style="background:red;"><img src="<?php echo get_template_directory_uri(); ?>/img/4-3.png" alt=""></div>
+                        <div class="col-lg-6" style="background:green;"><img src="<?php echo get_template_directory_uri(); ?>/img/4-3.png" alt=""></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12" style="background:blue;">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/4-3.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

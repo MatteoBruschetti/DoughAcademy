@@ -16,7 +16,7 @@ h1 {
   font-size: 9rem;
   font-weight: 600;
   letter-spacing: -1.5px;
-  line-height: 110%;
+  line-height: 105%;
   text-transform: uppercase;
   color: #1D1D1F;
 }
@@ -26,7 +26,7 @@ h2 {
   font-size: 9rem;
   font-weight: 600;
   letter-spacing: -1px;
-  line-height: 110%;
+  line-height: 105%;
   text-transform: uppercase;
   color: #1D1D1F;
 }
@@ -48,6 +48,24 @@ p {
 p.overtitle {
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+/*--------------------------------------------------
+TEXT COLOR
+--------------------------------------------------*/
+.t-white {
+  color: #FEFEFE;
+}
+
+/*--------------------------------------------------
+TEXT WEIGHT
+--------------------------------------------------*/
+.t-medium {
+  font-weight: 600;
+}
+
+.t-bold {
+  font-weight: 800;
 }
 
 /*--------------------------------------------------
@@ -275,6 +293,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   font-family: "Courier New", Courier, monospace;
   background: #FEFEFE;
 }
@@ -293,10 +312,6 @@ img {
   width: 100%;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -308,13 +323,32 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   width: 100vw;
+  max-width: 100%;
   height: 64px;
   max-height: 80px;
   background-color: black;
-  padding: 0.5rem 2rem;
   position: fixed;
   top: 0;
-  z-index: 99;
+  z-index: 999;
+  padding: 0.5rem 15px;
+}
+
+@media (min-width: 768px) {
+  nav {
+    padding: 0.5rem 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  nav {
+    padding: 0.5rem 6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav {
+    padding: 0.5rem 9rem;
+  }
 }
 
 nav a {
@@ -326,20 +360,16 @@ nav .logo {
   font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   cursor: pointer;
+  height: 52px;
   -webkit-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
 }
 
-nav .logo img {
-  height: auto;
-  max-width: 160px;
+nav .logo svg {
+  height: 100%;
+  width: auto;
+  max-height: 52px;
 }
 
 nav .logo:hover {
@@ -432,7 +462,7 @@ nav .burger:hover {
   opacity: 0.85;
 }
 
-nav .menu {
+nav .pannello-menu {
   position: absolute;
   right: 0;
   top: 64px;
@@ -442,6 +472,14 @@ nav .menu {
   height: calc(100vh - 64px);
   width: 100vw;
   background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+nav .pannello-menu .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -455,11 +493,11 @@ nav .menu {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
+  height: 80%;
+  margin: auto;
 }
 
-nav .menu li {
+nav .pannello-menu .menu li {
   opacity: 0;
   -webkit-transform: translateX(1.5rem);
           transform: translateX(1.5rem);
@@ -467,14 +505,14 @@ nav .menu li {
   transition: all 0.3s ease-out;
 }
 
-nav .menu li a {
+nav .pannello-menu .menu li a {
   color: #FEFEFE;
   font-size: 1.5rem;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
 }
 
-nav .menu li a:hover {
+nav .pannello-menu .menu li a:hover {
   color: grey;
 }
 
@@ -629,6 +667,28 @@ footer .widget_nav_menu .menu-item.current_page_item a {
 RECCOMENDATIONS for target size by Apple
     DESKTOP and MOBILE minimun raget size = 44px X 44px 
 --------------------------------------------------*/
+.hero {
+  height: 98vh;
+  padding: 4rem 0;
+  position: relative;
+}
+
+.hero .row {
+  height: 80%;
+}
+
+.img-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 98vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .fascia-evidenza {
   position: relative;
   padding: 4rem 0;
@@ -654,9 +714,21 @@ RECCOMENDATIONS for target size by Apple
   fill: #FEFEFE;
   width: 4rem;
   height: auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .social-bar a svg circle {
   fill: black;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-bar a:hover svg {
+  fill: black;
+}
+
+.social-bar a:hover svg circle {
+  fill: grey;
 }
 /*# sourceMappingURL=style.css.map */

@@ -35,6 +35,7 @@ html{
 }
 
 body{
+  overflow-x: hidden;
   font-family: $font-secondary;
   background: $color-white;
 }
