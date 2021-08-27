@@ -106,8 +106,6 @@
     // }
     // add_filter('upload_mimes', 'XY_svg_types');
 
-
-
     /*FUNCTION PARTS
     -------------------------------------------------*/
     require dirname(__FILE__).'/function_parts/customizer.php';
@@ -115,6 +113,5 @@
 
     //CPT
     require dirname(__FILE__).'/function_parts/cpt/CPT_corsi.php';
-
 ?>
 
