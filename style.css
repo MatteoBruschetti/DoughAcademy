@@ -71,13 +71,15 @@ h2 {
   font-weight: 600;
   letter-spacing: -1px;
   line-height: 105%;
+  color: #534741;
 }
 
 h3 {
   font-family: "Ubuntu", sans-serif;
-  font-size: 3rem;
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 600;
   line-height: 110%;
+  color: #534741;
 }
 
 p {
@@ -107,6 +109,16 @@ p.subtitle {
 @media (min-width: 992px) {
   p.subtitle {
     font-size: 1.25rem;
+  }
+}
+
+p.p-little {
+  font-size: 0.875rem;
+}
+
+@media (min-width: 992px) {
+  p.p-little {
+    font-size: 1rem;
   }
 }
 
@@ -650,29 +662,102 @@ nav.scrolled {
 }
 
 footer {
-  background-color: #C7B299;
+  background-color: #534741;
+  color: #C7B299;
+  padding: 6rem 0;
 }
 
-footer .svg-social-icon-bg {
+footer .first-col {
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 992px) {
+  footer .first-col {
+    margin-bottom: 0;
+  }
+}
+
+footer .logo {
+  display: inline-block;
+}
+
+footer .logo svg {
+  width: 120px;
+  height: auto;
+}
+
+footer .mail {
+  color: #C7B299;
+}
+
+footer .txt-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 992px) {
+  footer .txt-icon {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
+footer .txt-icon svg {
+  margin-right: 1rem;
+}
+
+footer .social-icon {
+  padding-top: 0.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 992px) {
+  footer .social-icon {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
+footer .social-icon svg .svg-social-icon-bg {
   fill: #534741;
 }
 
-footer .svg-social-icon {
-  fill: #FEFEFE;
+footer .social-icon svg .svg-social-icon {
+  fill: #C7B299;
+}
+
+footer .social-icon svg:hover .svg-social-icon-bg {
+  fill: #C7B299;
+}
+
+footer .social-icon svg:hover .svg-social-icon {
+  fill: #534741;
 }
 
 footer .widget_nav_menu .menu-item a {
-  color: black;
+  color: #C7B299;
   text-decoration: none;
   display: inline-block;
   text-transform: uppercase;
-  border-bottom: 4px solid #534741;
+  border-bottom: 4px solid #C7B299;
   -webkit-transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 footer .widget_nav_menu .menu-item a:hover {
-  border-bottom-color: #C7B299;
+  border-bottom-color: #534741;
   padding: 0 5px;
 }
 
@@ -729,6 +814,8 @@ footer .widget_nav_menu .menu-item.current_page_item a {
 .link {
   color: black;
   text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 2px;
   display: inline-block;
   text-transform: uppercase;
   border-bottom: 4px solid #534741;
@@ -783,15 +870,26 @@ RECCOMENDATIONS for target size by Apple
 
 .testo-img img, .img-testo img {
   border-radius: 0.75rem;
+  max-width: 480px;
 }
 
-.img-testo p {
-  max-width: 100%;
+.testo-img .immagine {
+  padding-right: auto;
 }
 
 @media (min-width: 992px) {
-  .img-testo p {
-    max-width: 96%;
+  .testo-img .immagine {
+    padding-right: 2rem;
+  }
+}
+
+.img-testo .immagine {
+  padding-left: auto;
+}
+
+@media (min-width: 992px) {
+  .img-testo .immagine {
+    padding-left: 2rem;
   }
 }
 
@@ -841,10 +939,10 @@ RECCOMENDATIONS for target size by Apple
 
 .fascia-evidenza {
   position: relative;
-  padding: 4rem 0;
+  padding: 6rem 0;
 }
 
-.fascia-evidenza::before {
+.fascia-evidenza.fascia-evidenza__light::before {
   content: '';
   display: block;
   position: absolute;
@@ -856,6 +954,47 @@ RECCOMENDATIONS for target size by Apple
   background-color: #C7B299;
 }
 
+.fascia-evidenza.fascia-evidenza__dark::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -25vw;
+  top: 0;
+  z-index: -1;
+  width: 150vw;
+  height: 100%;
+  background-color: #534741;
+}
+
+.fascia-evidenza.fascia-evidenza__dark p {
+  color: #FEFEFE;
+}
+
+.fascia-evidenza.fascia-evidenza__dark p.overtitle {
+  color: #FEFEFE;
+}
+
+.fascia-evidenza.fascia-evidenza__dark p.subtitle {
+  color: #FEFEFE;
+}
+
+.fascia-evidenza.fascia-evidenza__dark h2 {
+  color: #C7B299;
+}
+
+.fascia-evidenza.fascia-evidenza__dark .link {
+  color: #C7B299;
+  border-bottom: 4px solid #C7B299;
+}
+
+.fascia-evidenza.fascia-evidenza__dark .link:hover {
+  border-bottom-color: #534741;
+}
+
+.social-bar .justify-content-center {
+  margin-top: 4rem;
+}
+
 .social-bar a {
   display: inline-block;
 }
@@ -864,14 +1003,17 @@ RECCOMENDATIONS for target size by Apple
   fill: #FEFEFE;
   width: 4rem;
   height: auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+          box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  border-radius: 100vw;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .social-bar a svg circle {
   fill: #534741;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .social-bar a:hover svg {
@@ -880,5 +1022,50 @@ RECCOMENDATIONS for target size by Apple
 
 .social-bar a:hover svg circle {
   fill: #C7B299;
+}
+
+.keypoints img {
+  margin-top: 3rem;
+}
+
+@media (min-width: 992px) {
+  .keypoints img {
+    margin-top: 0;
+  }
+}
+
+.gallery img {
+  display: block;
+  border-radius: 0.75rem;
+  -webkit-transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.gallery img:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  opacity: 0.9;
+}
+
+.gallery .gallery__full-h img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.gallery .gallery__split img {
+  margin-top: 1.75rem;
+}
+
+@media (min-width: 992px) {
+  .gallery .gallery__split img {
+    margin-top: 0;
+  }
+}
+
+.gallery .gallery__full-w img {
+  margin-top: 1.75rem;
 }
 /*# sourceMappingURL=style.css.map */

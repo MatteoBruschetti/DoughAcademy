@@ -3,14 +3,23 @@
 
     img{
         border-radius: 0.75rem;
+        max-width: 480px;
     }
 }
 
+.testo-img{
+    .immagine{
+        padding-right: auto;
+        @media #{$large}{ 
+            padding-right: 2rem;
+        }
+    }
+}
 .img-testo{
-    p{
-        max-width: 100%;
-        @media #{$large}{
-            max-width: 96%;
+    .immagine{
+        padding-left: auto;
+        @media #{$large}{ 
+            padding-left: 2rem;
         }
     }
 }

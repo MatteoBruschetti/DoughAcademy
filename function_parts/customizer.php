@@ -23,17 +23,6 @@
                     "label"         =>                 "Telefono",
                     "type"          =>                 "text"
                 ));
-            
-            /*FIELD Email*/
-            $wp_customize -> add_setting("XY_contatti_email", array(
-                "default"           =>                  "Inserisci il tuo indirizzo email"
-            ));
-                $wp_customize -> add_control("XY_contatti_email", array(
-                    "section"       =>                  "XY_contatti", 
-                    "label"         =>                  "Email",
-                    "type"          =>                  "text"
-
-                ));
             /*FIELD Indirizzo*/
             $wp_customize -> add_setting("XY_contatti_indirizzo", array(
                 "default"           =>                  "Inserisci il tuo indirizzo"

@@ -1,11 +1,11 @@
     </main>
 
 
-    <footer class="pb-m pt-m">
+    <footer class="t-center-mobile">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6">
-                    <a class="logo" href="<?php echo esc_url_raw(home_url()); ?>">
+                <div class="col-12 col-lg-6 first-col">
+                    <a class="mb-s logo" href="<?php echo esc_url_raw(home_url()); ?>">
                         <svg width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M36.9565 26.3838C35.5383 26.0498 34.0783 25.6741 32.7436 25.0897L30.9917 24.38C30.9917 27.5527 33.2024 32.0612 36.2057 32.6456C37.6239 32.9378 39.0004 33.4805 40.3351 34.1485L42.0453 34.9834V32.8126C42.0453 29.7234 39.8763 27.0935 36.9565 26.3838Z" fill="#C7B299"/>
                             <path d="M43.5469 35.0264L45.0068 34.3167C46.5084 33.607 48.0517 33.1061 49.6785 32.6469C52.5149 31.8537 54.6005 27.5122 54.6005 24.423L52.3898 25.2579C51.1384 25.7171 49.8871 26.0928 48.594 26.3433C45.7159 26.886 43.5469 29.4324 43.5469 32.4799V35.0264Z" fill="#C7B299"/>
@@ -22,16 +22,39 @@
                             <path d="M42.8796 26.8429L39.7512 23.712C37.04 20.9985 37.04 16.5735 39.7512 13.86L42.8796 10.729L46.008 13.86C48.7192 16.5735 48.7192 20.9985 46.008 23.712L42.8796 26.8429Z" fill="#C7B299"/>
                         </svg>
                     </a>
-                    <p class="t-bold">Nome sito</p>
-                    <p><?php echo get_theme_mod("XY_contatti_indirizzo"); ?></p>
-                    <p><?php echo get_theme_mod("XY_contatti_piva"); ?></p>
+                    <p class="mb-s t-bold">Dough Academy</p>
+                    <p class="p-little"><?php echo get_theme_mod("XY_contatti_indirizzo"); ?></p>
+                    <p class="p-little"><?php echo get_theme_mod("XY_contatti_piva"); ?></p>
+                    <p class="p-little">© Tutti i diritti riservati</p>
+                    <p class="p-little"><a class="mail" href="<?php echo get_privacy_policy_url() ?>">Privacy e Cookies policies</a></p>
+                    <!-- <p class="p-little"><a class="mail">Credits</a></p> -->
                 </div>
-                <div class="col-12 col-lg-6">
-                    <p><?php echo get_theme_mod("XY_contatti_telefono"); ?></p>
-                    <p><?php echo get_theme_mod("XY_contatti_email"); ?></p>
 
-                    <div class="row">
-                        <div class="col-4">
+                <div class="col-12 col-lg-6">
+                    <!--Tel-->
+                    <div class="txt-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.55954 15.6019C8.59683 17.7226 10.3158 19.4338 12.4412 20.4614C12.5967 20.5351 12.7687 20.567 12.9403 20.554C13.1119 20.541 13.2771 20.4836 13.4198 20.3874L16.5492 18.3006C16.6877 18.2083 16.8469 18.152 17.0126 18.1368C17.1782 18.1215 17.3451 18.1479 17.498 18.2134L23.3526 20.7225C23.5515 20.807 23.7175 20.9538 23.8257 21.1409C23.9339 21.328 23.9783 21.5451 23.9524 21.7596C23.7673 23.2076 23.0608 24.5385 21.9652 25.5031C20.8695 26.4678 19.4598 26.9999 18 27C13.4913 27 9.1673 25.2089 5.97919 22.0208C2.79107 18.8327 1 14.5087 1 10C1.00008 8.54022 1.53224 7.13052 2.49685 6.03485C3.46146 4.93918 4.79237 4.23267 6.24037 4.04763C6.45489 4.02167 6.67204 4.06612 6.85909 4.1743C7.04614 4.28248 7.19298 4.44852 7.27746 4.6474L9.78877 10.5071C9.85373 10.6587 9.8802 10.824 9.86582 10.9883C9.85144 11.1525 9.79666 11.3107 9.70636 11.4487L7.62681 14.6261C7.53216 14.7691 7.47621 14.9341 7.46442 15.1051C7.45263 15.2762 7.4854 15.4473 7.55954 15.6019V15.6019Z" stroke="#C7B299" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <p>
+                            <?php echo get_theme_mod("XY_contatti_telefono"); ?>
+                        </p>
+                    </div>
+                    <!--Mail-->
+                    <div class="txt-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 7L13 18L1 7" stroke="#C7B299" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1 7H25V24C25 24.2652 24.8946 24.5196 24.7071 24.7071C24.5196 24.8946 24.2652 25 24 25H2C1.73478 25 1.48043 24.8946 1.29289 24.7071C1.10536 24.5196 1 24.2652 1 24V7Z" stroke="#C7B299" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.8182 16L1.30835 24.7174" stroke="#C7B299" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M24.6916 24.7174L15.1816 16" stroke="#C7B299" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <p>
+                            <a href="mailto:%69%6E%66%6F%40%64%6F%75%67%68%61%63%61%64%65%6D%79%2E%69%74" target="_blank" class="mail">info@doughacademy.it</a>
+                        </p>
+                    </div>
+
+                    <div class="row social-icon">
+                        <div class="col-3 col-md-2">
                             <!--Facebook-->
                             <a href="<?php echo get_theme_mod("XY_social_facebook"); ?>" target="_blank">
                                 <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,7 +63,7 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="col-4">
+                        <div class="col-3 col-md-2">
                             <!--Instagram-->
                             <a href="<?php echo get_theme_mod("XY_social_instagram"); ?>" target="_blank">
                                 <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,7 +74,7 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="col-4">
+                        <div class="col-3 col-md-2">
                             <!--Youtube-->
                             <a href="<?php echo get_theme_mod("XY_social_youtube"); ?>" target="_blank">
                                 <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">

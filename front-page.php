@@ -44,8 +44,8 @@
         
         
         <!--Pizza class-->
-        <section class="img-testo testo-img__dark pt-xl">
-            <div class="row mb-xl pb-xl">
+        <section class="img-testo testo-img__dark pt-xxl">
+            <div class="row mb-xxl pb-xxl">
                 <div class="col-12 col-lg-7">
                     <p class="overtitle">le Pizza class</p> 
                     <h2 class="mb-s">Impariamo l’ arte bianca a casa</h2>
@@ -54,35 +54,31 @@
                         Se vuoi informazioni più specifiche scrivici qui, ti risponderemo in tempi brevissimi.
                         Passione, studio e competenza al tuo servizio.
                     </p> 
-                    <a class="btn mt-m mb-l" href="#">Scopri i corsi</a>
+                    <a class="btn mt-m" href="#">Scopri i corsi</a>
                 </div>
-                <div class="col-12 col-lg-5 immagine">
+                <div class="col-12 col-lg-5 mb-m immagine order-first order-lg-last">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/Dough_Academy_mano_che_impastano_pizza.png" alt="">
                 </div>
             </div>
         </section>
 
 
-        <!--BLOCCO Titolo + paragrafo-->
+        <!--Keypoints-->
         <section class="titolo-paragrafo">
             <div class="row t-center mb-l">
                 <div class="col-12">
-                    <h2 class="mb-s">H2 here</h2>
+                    <h2 class="mb-s">Cosa ti aspetta</h2>
                     <p>
-                        P here. 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu viverra diam, nec maximus est. Vestibulum condimentum turpis id ipsum volutpat, non gravida leo consequat. Sed mi libero, rutrum in maximus aliquet, sollicitudin nec nunc. Vestibulum vulputate diam vitae lobortis tempus.
+                        Questa sezione è pensata per comunicare in modo rapido ed efficente le caratteristiche chiave e i punti di forza dei corsi.
                     </p> 
                 </div>
             </div>
         </section>
-
-        
-        <!--BLOCCO Keypoints img + titolo + p-->
         <section class="keypoints">
             <div class="row mb-xxl">
                 <div class="col-12 col-md-6 col-lg-3">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/1-1.png" alt="">
-                    <h3 class="mb-s t-center">H3 here</h3>
+                    <h3 class="mb-s mt-s t-center">H3 here</h3>
                     <p class="t-center">
                         P here. 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu viverra diam, nec maximus est.
@@ -90,7 +86,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/1-1.png" alt="">
-                    <h3 class="mb-s t-center">H3 here</h3>
+                    <h3 class="mb-s mt-s t-center">H3 here</h3>
                     <p class="t-center">
                         P here. 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu viverra diam, nec maximus est.
@@ -98,7 +94,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/1-1.png" alt="">
-                    <h3 class="mb-s t-center">H3 here</h3>
+                    <h3 class="mb-s mt-s t-center">H3 here</h3>
                     <p class="t-center">
                         P here. 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu viverra diam, nec maximus est.
@@ -106,7 +102,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/1-1.png" alt="">
-                    <h3 class="mb-s t-center">H3 here</h3>
+                    <h3 class="mb-s mt-s t-center">H3 here</h3>
                     <p class="t-center">
                         P here. 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu viverra diam, nec maximus est.
@@ -116,11 +112,11 @@
         </section>
 
 
-        <!--BLOCCO Titolo + paragrafo-->
+        <!--i Piatti che cunierai-->
         <section class="titolo-paragrafo">
             <div class="row t-center mb-l">
                 <div class="col-12">
-                    <h2 class="mb-s">H2 here</h2>
+                    <h2 class="mb-s">I piatti che cucinerai</h2>
                     <p>
                         P here. 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu viverra diam, nec maximus est. Vestibulum condimentum turpis id ipsum volutpat, non gravida leo consequat. Sed mi libero, rutrum in maximus aliquet, sollicitudin nec nunc. Vestibulum vulputate diam vitae lobortis tempus.
@@ -128,22 +124,19 @@
                 </div>
             </div>
         </section>
-
-
-        <!--BLOCCO Gallery-->
         <section class="gallery">
             <div class="row mb-xxl">
-                <div class="col-lg-4">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/3-4.png" alt="">
+                <div class="col-lg-4 gallery__full-h">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/ph(3).jpg" alt="">
                 </div>
-                <div class="col-lg-8">
+                <div class="col-lg-8 gallery__split">
                     <div class="row">
-                        <div class="col-lg-6"><img src="<?php echo get_template_directory_uri(); ?>/img/4-3.png" alt=""></div>
-                        <div class="col-lg-6"><img src="<?php echo get_template_directory_uri(); ?>/img/4-3.png" alt=""></div>
+                        <div class="col-lg-6"><img src="<?php echo get_template_directory_uri(); ?>/img/ph(2).jpg" alt=""></div>
+                        <div class="col-lg-6"><img src="<?php echo get_template_directory_uri(); ?>/img/ph(2).jpg" alt=""></div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-12">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/4-3.png" alt="">
+                        <div class="col-lg-12 gallery__full-w">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/ph(2).jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -151,33 +144,33 @@
         </section>
 
 
-        <!--BLOCCO Fascia in evidenza-->
-        <section class="fascia-evidenza mb-xxl">
+        <!--Fascia in evidenza-->
+        <section class="fascia-evidenza fascia-evidenza__dark mb-xxl">
             <div class="row t-center">
                 <div class="col-12">
-                    <h2 class="mb-s">H2 here</h2>
+                    <h2 class="mb-s">Pronto a iniziare</h2>
                     <p>
                         P here. 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu viverra diam, nec maximus est. Vestibulum condimentum turpis id ipsum volutpat, non gravida leo consequat. Sed mi libero, rutrum in maximus aliquet, sollicitudin nec nunc. Vestibulum vulputate diam vitae lobortis tempus.
                     </p> 
                 </div>
                 <div class="col-12">
-                    <a class="btn mt-m" href="#">BTN here</a>
+                    <a class="btn mt-m" href="#">Scopri i corsi</a>
                 </div>
                 <div class="col-12">
-                    <a class="link mt-m" href="#">LINK here</a>
+                    <a class="link mt-m" href="#">Contattami</a> 
                 </div>
             </div>
         </section>
 
 
-        <!--BLOCCO Social bar-->
+        <!--Social bar-->
         <section class="social-bar">
             <div class="row t-center mb-xxl">
                 <div class="col-12">
-                    <h2 class="mb-s">#H2 here</h2>
+                    <h2 class="mb-s">#Dough Academy</h2>
                     <div class="row justify-content-center">
-                        <div class="col-3">
+                        <div class="col-3 col-lg-2">
                             <!--Facebook-->
                             <a href="<?php echo get_theme_mod("XY_social_facebook"); ?>" target="_blank">
                                 <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -186,7 +179,7 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 col-lg-2">
                             <!--Instagram-->
                             <a href="<?php echo get_theme_mod("XY_social_instagram"); ?>" target="_blank">
                                 <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -197,7 +190,7 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 col-lg-2">
                             <!--Youtube-->
                             <a href="<?php echo get_theme_mod("XY_social_youtube"); ?>" target="_blank">
                                 <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
