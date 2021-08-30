@@ -6,6 +6,10 @@
     .row{
         height: 80%;
     }
+
+    h1{
+        font-size: clamp(2.5rem, 8vw, 6rem);
+    }
 }
 
 .img-background{

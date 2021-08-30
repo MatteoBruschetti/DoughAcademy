@@ -28,9 +28,6 @@
 
     /*REMOVE
     ----------------------------------------------*/ 
-    //Remove lazy loading images
-    add_filter( 'wp_lazy_loading_enabled', '__return_false' );
-
     // Remove comments
     add_action('admin_init', function () {
         global $pagenow;

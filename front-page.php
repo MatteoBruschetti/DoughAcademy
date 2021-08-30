@@ -10,17 +10,14 @@
         <section class="hero">
             <div class="row align-items-center mb-xxl">
                 <div class="col-12">
-                    <p class="overtitle">Overtitle here</p> 
-                    <h1 class="mb-s">H1 here</h1>
-                    <p class="t-medium">
-                        P here. 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu viverra diam, nec maximus est. Vestibulum condimentum turpis id ipsum volutpat, non gravida leo consequat. Sed mi libero, rutrum in maximus aliquet, sollicitudin nec nunc. Vestibulum vulputate diam vitae lobortis tempus.
-                    </p> 
-                    <a class="btn mt-m" href="#">BTN here</a>
+                    <p class="overtitle t-white t-center-mobile">Dough Academy</p> 
+                    <h1 class="mb-m t-center-mobile">L’Accademia degli impasti</h1>
+                    <p class="t-white t-center-mobile subtitle">Conoscere l’arte bianca professionalità e competenza</p> 
+                    <a class="btn btn-center-mobile mt-m" href="#">Inizia a cucinare</a>
                 </div>
             </div>
         </section>
-        <div class="img-background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/4-3.png');"></div>
+        <div class="img-background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/Dough_Academy_mano_che_impasta.png');"></div>
 
 
         <!--BLOCCO Testo immagine-->

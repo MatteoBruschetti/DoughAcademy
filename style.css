@@ -9,21 +9,64 @@ Description: Official custom WP theme for Douch Academy
 /*------------------------------------------------------------------------------
 HOSTING LOCAL FONTS with https://google-webfonts-helper.herokuapp.com/fonts/
 ------------------------------------------------------------------------------*/
+/* ubuntu-700 - latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/ubuntu-v15-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("fonts/ubuntu-v15-latin-700.eot?#iefix") format("embedded-opentype"), url("fonts/ubuntu-v15-latin-700.woff2") format("woff2"), url("fonts/ubuntu-v15-latin-700.woff") format("woff"), url("fonts/ubuntu-v15-latin-700.ttf") format("truetype"), url("fonts/ubuntu-v15-latin-700.svg#Ubuntu") format("svg");
+  /* Legacy iOS */
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/open-sans-v23-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("fonts/open-sans-v23-latin-regular.eot?#iefix") format("embedded-opentype"), url("fonts/open-sans-v23-latin-regular.woff2") format("woff2"), url("fonts/open-sans-v23-latin-regular.woff") format("woff"), url("fonts/open-sans-v23-latin-regular.ttf") format("truetype"), url("fonts/open-sans-v23-latin-regular.svg#OpenSans") format("svg");
+  /* Legacy iOS */
+}
+
+/* open-sans-600 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url("fonts/open-sans-v23-latin-600.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("fonts/open-sans-v23-latin-600.eot?#iefix") format("embedded-opentype"), url("fonts/open-sans-v23-latin-600.woff2") format("woff2"), url("fonts/open-sans-v23-latin-600.woff") format("woff"), url("fonts/open-sans-v23-latin-600.ttf") format("truetype"), url("fonts/open-sans-v23-latin-600.svg#OpenSans") format("svg");
+  /* Legacy iOS */
+}
+
+/* open-sans-700 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/open-sans-v23-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("fonts/open-sans-v23-latin-700.eot?#iefix") format("embedded-opentype"), url("fonts/open-sans-v23-latin-700.woff2") format("woff2"), url("fonts/open-sans-v23-latin-700.woff") format("woff"), url("fonts/open-sans-v23-latin-700.ttf") format("truetype"), url("fonts/open-sans-v23-latin-700.svg#OpenSans") format("svg");
+  /* Legacy iOS */
+}
+
 /*--------------------------------------------------
 Type scale
 --------------------------------------------------*/
 h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 9rem;
   font-weight: 600;
   letter-spacing: -1.5px;
   line-height: 105%;
-  text-transform: uppercase;
-  color: #1D1D1F;
+  color: #C7B299;
 }
 
 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 9rem;
   font-weight: 600;
   letter-spacing: -1px;
@@ -33,27 +76,53 @@ h2 {
 }
 
 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 3rem;
   font-weight: 600;
   line-height: 110%;
 }
 
 p {
-  font-size: 1rem;
   font-weight: 400;
   line-height: 180%;
   word-wrap: break-word;
+  font-size: 1rem;
+}
+
+@media (min-width: 992px) {
+  p {
+    font-size: 1.125rem;
+  }
 }
 
 p.overtitle {
+  font-size: 1.25rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+p.subtitle {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+@media (min-width: 992px) {
+  p.subtitle {
+    font-size: 1.25rem;
+  }
 }
 
 /*--------------------------------------------------
 TEXT COLOR
 --------------------------------------------------*/
+.t-primary {
+  color: #534741;
+}
+
+.t-secondary {
+  color: #C7B299;
+}
+
 .t-white {
   color: #FEFEFE;
 }
@@ -61,12 +130,8 @@ TEXT COLOR
 /*--------------------------------------------------
 TEXT WEIGHT
 --------------------------------------------------*/
-.t-medium {
-  font-weight: 600;
-}
-
 .t-bold {
-  font-weight: 800;
+  font-weight: 700;
 }
 
 /*--------------------------------------------------
@@ -295,18 +360,18 @@ html {
 
 body {
   overflow-x: hidden;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Open Sans", sans-serif;
   background: #FEFEFE;
 }
 
 ::-moz-selection {
   color: white;
-  background: black;
+  background: #534741;
 }
 
 ::selection {
   color: white;
-  background: black;
+  background: #534741;
 }
 
 img {
@@ -327,11 +392,13 @@ nav {
   max-width: 100%;
   height: 64px;
   max-height: 80px;
-  background-color: black;
+  background-color: transparent;
   position: fixed;
   top: 0;
   z-index: 999;
   padding: 0.5rem 15px;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 @media (min-width: 768px) {
@@ -365,6 +432,7 @@ nav .logo {
   height: 52px;
   -webkit-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
+  z-index: 99;
 }
 
 nav .logo svg {
@@ -382,6 +450,7 @@ nav .burger {
   /*shows until 992px*/
   -webkit-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
+  z-index: 99;
 }
 
 nav .burger #burger-icon {
@@ -397,7 +466,7 @@ nav .burger #burger-icon rect {
 
 nav .burger #burger-icon line {
   fill: none;
-  stroke: #FEFEFE;
+  stroke: #C7B299;
   stroke-linecap: round;
   stroke-miterlimit: 10;
   stroke-width: 4px;
@@ -466,13 +535,13 @@ nav .burger:hover {
 nav .pannello-menu {
   position: absolute;
   right: 0;
-  top: 64px;
+  top: 0;
   z-index: 98;
   -webkit-transform: translateX(101vw);
           transform: translateX(101vw);
-  height: calc(100vh - 64px);
+  height: 100vh;
   width: 100vw;
-  background-color: black;
+  background-color: #534741;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -514,7 +583,7 @@ nav .pannello-menu .menu li a {
 }
 
 nav .pannello-menu .menu li a:hover {
-  color: grey;
+  color: #C7B299;
 }
 
 nav .open {
@@ -571,7 +640,11 @@ nav .open li:nth-child(6) {
 }
 
 nav .current-menu-item a {
-  color: grey !important;
+  color: #C7B299 !important;
+}
+
+nav.scrolled {
+  background-color: #534741;
 }
 
 .fix-fixed {
@@ -579,11 +652,11 @@ nav .current-menu-item a {
 }
 
 footer {
-  background-color: grey;
+  background-color: #C7B299;
 }
 
 footer .svg-social-icon-bg {
-  fill: black;
+  fill: #534741;
 }
 
 footer .svg-social-icon {
@@ -595,18 +668,18 @@ footer .widget_nav_menu .menu-item a {
   text-decoration: none;
   display: inline-block;
   text-transform: uppercase;
-  border-bottom: 4px solid black;
+  border-bottom: 4px solid #534741;
   -webkit-transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 footer .widget_nav_menu .menu-item a:hover {
-  border-bottom-color: grey;
+  border-bottom-color: #C7B299;
   padding: 0 5px;
 }
 
 footer .widget_nav_menu .menu-item.current_page_item a {
-  color: red;
+  color: #FEFEFE;
   border-bottom: none;
 }
 
@@ -615,13 +688,13 @@ footer .widget_nav_menu .menu-item.current_page_item a {
 -----------------------------------------*/
 .btn {
   display: inline-block;
-  color: #FEFEFE;
-  background: black;
+  color: #534741;
+  background: #FEFEFE;
   font-size: 1rem;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 800;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   border-radius: 100px;
   padding: 16px 32px;
   -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
@@ -630,10 +703,26 @@ footer .widget_nav_menu .menu-item.current_page_item a {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+.btn.btn-center-mobile {
+  display: block;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 992px) {
+  .btn.btn-center-mobile {
+    display: inline-block;
+  }
+}
+
 .btn:hover {
   -webkit-box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.3), 0 4px 8px 3px rgba(60, 64, 67, 0.15);
           box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.3), 0 4px 8px 3px rgba(60, 64, 67, 0.15);
-  background-color: grey;
+  background-color: #C7B299;
+  color: #FEFEFE;
 }
 
 /*----------------------------------------
@@ -644,13 +733,13 @@ footer .widget_nav_menu .menu-item.current_page_item a {
   text-decoration: none;
   display: inline-block;
   text-transform: uppercase;
-  border-bottom: 4px solid black;
+  border-bottom: 4px solid #534741;
   -webkit-transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .link:hover {
-  border-bottom-color: grey;
+  border-bottom-color: #C7B299;
   padding: 0 5px;
 }
 
@@ -661,7 +750,7 @@ footer .widget_nav_menu .menu-item.current_page_item a {
 }
 
 .link-ghost:hover {
-  color: grey;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 /*--------------------------------------------------
@@ -676,6 +765,10 @@ RECCOMENDATIONS for target size by Apple
 
 .hero .row {
   height: 80%;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 8vw, 6rem);
 }
 
 .img-background {
@@ -704,7 +797,7 @@ RECCOMENDATIONS for target size by Apple
   z-index: -1;
   width: 150vw;
   height: 100%;
-  background-color: grey;
+  background-color: #C7B299;
 }
 
 .social-bar a {
@@ -720,16 +813,16 @@ RECCOMENDATIONS for target size by Apple
 }
 
 .social-bar a svg circle {
-  fill: black;
+  fill: #534741;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .social-bar a:hover svg {
-  fill: black;
+  fill: #534741;
 }
 
 .social-bar a:hover svg circle {
-  fill: grey;
+  fill: #C7B299;
 }
 /*# sourceMappingURL=style.css.map */

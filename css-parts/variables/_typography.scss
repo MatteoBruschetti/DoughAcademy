@@ -1,5 +1,5 @@
-$font-primary: 'Montserrat', sans-serif;
-$font-secondary: 'Courier New', Courier, monospace;
+$font-primary: 'Ubuntu', sans-serif; //Heading
+$font-secondary: 'Open Sans', sans-serif; //Paragraph
 
 /*--------------------------------------------------
 Type scale
@@ -8,8 +8,7 @@ h1{
     font-family: $font-primary;
     font-size: 9rem; font-weight: 600;
     letter-spacing: -1.5px; line-height: 105%;
-    text-transform: uppercase;
-    color: $color-black;
+    color: $color-secondary;
 }
 
 h2{
@@ -28,13 +27,27 @@ h3{
 
 
 p{
-    font-size: 1rem; font-weight: 400;
+    font-weight: 400;
     line-height: 180%;
     word-wrap:break-word;
 
+    font-size: 1rem; //16px on mobile 
+        @media #{$large} {
+            font-size: 1.125rem; //18px on desktop
+        }
+
     &.overtitle{
+        font-size: 1.25rem;
         text-transform: uppercase;
         letter-spacing: 2px;
+    }
+
+    &.subtitle{
+        font-weight: 600;
+        font-size: 1.125rem; //18px on mobile 
+        @media #{$large} {
+            font-size: 1.25rem; //20px on desktop
+        }
     }
 
 }
@@ -43,6 +56,12 @@ p{
 /*--------------------------------------------------
 TEXT COLOR
 --------------------------------------------------*/
+.t-primary{
+    color: $color-primary;
+}
+.t-secondary{
+    color: $color-secondary;
+}
 .t-white{
     color: $color-white;
 }
@@ -52,11 +71,8 @@ TEXT COLOR
 /*--------------------------------------------------
 TEXT WEIGHT
 --------------------------------------------------*/
-.t-medium{
-    font-weight: 600;
-}
 .t-bold{
-    font-weight: 800;
+    font-weight: 700;
 }
 
 
