@@ -29,7 +29,7 @@
                 'show_ui'               =>          true,
                 'query_var'             =>          true,
                 'menu_position'         =>          20,
-                'menu_icon'             =>          'dashicons-carrot', //Dashicon
+                'menu_icon'             =>          'dashicons-beer', //Dashicon
                 'rewrite'               =>          array(
                     'slug'              =>          'corsi',
                     'with-front'        =>          false,

@@ -19,9 +19,17 @@ footer{
             width: 120px;
             height: auto;
         }
+
+        &:hover{
+            opacity: 0.8;
+        }
     }
     .mail{
         color: $color-secondary;
+
+        &:hover{
+            opacity: 0.8;
+        }
     }
 
 
