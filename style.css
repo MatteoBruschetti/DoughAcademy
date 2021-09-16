@@ -377,12 +377,11 @@ html {
   /*= 1rem*/
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  /*Include padding and border in the element's total width and height*/
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-  overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
   background: #C7B299;
 }
