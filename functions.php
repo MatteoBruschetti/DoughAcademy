@@ -99,7 +99,7 @@
         $mimes['svg'] = 'image/svg+xml';
         return $mimes;
     }
-    add_filter('upload_mimes', 'XY_svg_types');
+    add_filter('upload_mimes', 'XY_svg_types'); 
 
 
 
