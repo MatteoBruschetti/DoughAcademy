@@ -10,6 +10,16 @@ h1{
     font-weight: 600;
     letter-spacing: -1.5px; line-height: 105%;
     color: $color-secondary;
+
+    &.fake-h1{
+        font-size: 1rem;
+        font-weight: 400; 
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        @media #{$large} {
+            font-size: 1.25rem; //20px on desktop
+        }
+    }
 }
 
 h2{
@@ -28,21 +38,31 @@ h3{
     color: $color-primary;
 }
 
+h4{
+    font-family: $font-primary;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 600;
+    line-height: 110%;
+    color: $color-primary;
+}
 
 p{
     font-weight: 400;
     line-height: 140%;
     word-wrap:break-word;
-
+    opacity: 0.9; 
     font-size: 1rem; //16px on mobile 
         @media #{$large} {
             font-size: 1.125rem; //18px on desktop
         }
 
     &.overtitle{
-        font-size: 1.25rem;
+        font-size: 1rem;  
         text-transform: uppercase;
         letter-spacing: 2px;
+        @media #{$large} {
+            font-size: 1.25rem; //20px on desktop
+        }
     }
 
     &.subtitle{
@@ -58,6 +78,15 @@ p{
         @media #{$large} {
             font-size: 1rem;
         }
+    }
+
+    &.fake-h1{
+        font-family: $font-primary;
+        font-size: clamp(3rem, 10vw, 6rem);
+        text-transform: none;
+        font-weight: 600;
+        letter-spacing: -1.5px; line-height: 105%;
+        color: $color-secondary;
     }
 
 }
@@ -82,7 +111,10 @@ TEXT COLOR
 TEXT WEIGHT
 --------------------------------------------------*/
 .t-bold{
-    font-weight: 700;
+    font-weight: 600;
+}
+.t-regular{
+    font-weight: 400;
 }
 
 

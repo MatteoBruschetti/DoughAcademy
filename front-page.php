@@ -6,34 +6,30 @@
         <section class="hero">
             <div class="row align-items-center mb-xl">
                 <div class="col-12">
-                    <p class="overtitle t-white t-center-mobile">Dough Academy</p> 
-                    <h1 class="mb-m t-center-mobile">L’Accademia degli impasti</h1>
-                    <p class="t-white t-center-mobile subtitle">Conoscere l’arte bianca professionalità e competenza</p> 
-                    <a class="btn btn-center-mobile mt-m" href="#">Inizia a cucinare</a>
+                    <h1 class="fake-h1 t-white t-regular t-center-mobile">Dough Academy</h1> 
+                    <p class="fake-h1 mb-m t-center-mobile">L’Accademia degli impasti</p>
+                    <p class="t-white t-center-mobile subtitle">Imparare l’arte bianca con professionalità e competenza</p> 
+                    <a class="btn btn-center-mobile mt-m casa" href="<?php echo get_post_permalink( 109 ); ?>">Scopri i corsi</a>
                 </div>
             </div>
         </section>
-        <div class="img-background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/Dough_Academy_mano_che_impasta.png');"></div>
+        <div class="img-background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/Dough_Academy_mano_che_impasta.jpg');"></div>
 
 
         <!--Bio-->
         <section class="testo-img testo-img__light">
             <div class="row mb-xxl">
-                <div class="col-12 col-lg-5 mb-m immagine">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/Dough_Academy_pizza_Mirko_Savoia.png" alt="">
+                <div class="col-12 col-lg-5 mb-m immagine casa">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/Dough_Academy_chef_Mirko_Savoia_con_pizza_napoletana.jpg" alt="">
                 </div>
                 <div class="col-12 col-lg-7">
                     <p class="overtitle">Mirko savoia</p> 
                     <h2 class="mb-m">Una passione iniziata 25 anni fa...</h2>
                     <p class="subtitle mb-s">Ciao mi chiamo Mirko Savoia e sono un pizzaiolo con 25 anni di esperienza.</p>
-                    <p>
-                        La mia passione per il mondo della panificazione è iniziata a soli 17 anni quando ho cominciato, come spesso accade, a lavorare come semplice apprendista in una piccola pizzeria di paese.
-                        L’ amore per il mio mestiere mi ha portato ad accrescere le mie competenze riguardo al mondo della panificazione, a studiare e ad innovarmi costantemente.
-                        Da diversi anni aiuto professionisti e appassionati casalinghi ad imparare a preparare ottime pizze, pane, focacce e tanti altri prodotti di panificazione.
-                        Col tempo ho capito che tramite l insegnamento delle giuste conoscenze chiunque può imparare a preparare a casa propria ottimi impasti allo stesso livello, o addirittura meglio, di quelli dei piu famosi professionisti.
-                        <br>
-                        Il mio mestiere è aiutarvi a realizzare tutto questo con semplicità e tanta passione.
-                    </p> 
+                    <p class="mb-s">Da diversi anni aiuto professionisti e appassionati casalinghi ad imparare a preparare ottime pizze, pane, focacce e tanti altri prodotti di panificazione.</p>
+                    <p class="mb-s">Col tempo ho capito che tramite l insegnamento delle giuste conoscenze chiunque può imparare a preparare a casa propria ottimi impasti allo stesso livello, o addirittura meglio, di quelli dei piu famosi professionisti.</p>
+                    <p class="mb-s">Il mio mestiere è aiutarvi a realizzare tutto questo con semplicità e tanta passione.</p>
+                    <a class="btn mt-m casa" href="<?php echo get_post_permalink( 72 ); ?>">Piacere di conoscerti</a>
                 </div>
             </div>
         </section>
@@ -44,16 +40,14 @@
             <div class="row mb-xxl pb-xxl">
                 <div class="col-12 col-lg-7">
                     <p class="overtitle">le Pizza class</p> 
-                    <h2 class="mb-s">Impariamo l’ arte bianca a casa</h2>
-                    <p>
-                        Le pizza class sono un modo innovativo per imparare e acquisire nuove competenze e realizzare in casa i tuoi impasti. Le pizza class sono delle vere e proprie classi in cui sarai costantemente seguito in ogni passaggio, troverai aggiornamenti e approfondimenti dedicati al mondo della panificazione, avrai sempre una risposta a tutte le tue domande e potrai imparare e crescere condividendo con la nostra community la tua passione. All interno delle pizza class troverai tre video ricette in cui ti spiegheremo attraverso tutti i passaggi come realizzarle in modo preciso e accurato: dalle dosi alla fase dell impastamento, dalla gestione dell impasto alla formatura dei panetti fini ad arrivare alla cottura. Le video ricette e tutto il materiale raccolto durante il corso saranno sempre consultabili in qualunque momento della giornata svincolandoti completamente da problemi di orario. Sarai quindi libero di seguire il corso senza obblighi di orario ma avendo costantemente assistenza personalizzata.
-                        Se vuoi informazioni più specifiche scrivici qui, ti risponderemo in tempi brevissimi.
-                        Passione, studio e competenza al tuo servizio.
-                    </p> 
-                    <a class="btn mt-m" href="#">Scopri i corsi</a>
+                    <h2 class="mb-m">Impariamo l’ arte bianca a casa</h2>
+                    <p class="mb-s">Le pizza class sono un modo innovativo per imparare e acquisire nuove competenze e realizzare in casa i tuoi impasti.</p>
+                    <p class="mb-s">Le pizza class sono delle vere e proprie classi in cui sarai costantemente seguito in ogni passaggio, troverai aggiornamenti e approfondimenti dedicati al mondo della panificazione, avrai sempre una risposta a tutte le tue domande e potrai imparare e crescere condividendo con la nostra community la tua passione.</p>
+                    <p class="mb-s">Passione, studio e competenza al tuo servizio.</p> 
+                    <a class="btn mt-m casa" href="<?php echo get_post_permalink( 108 ); ?>">Scopri i corsi</a>
                 </div>
-                <div class="col-12 col-lg-5 mb-m immagine order-first order-lg-last">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/Dough_Academy_mano_che_impastano_pizza.png" alt="">
+                <div class="col-12 col-lg-5 mb-m immagine order-first order-lg-last casa">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/Dough_Academy_mani_che_impastano_pizza.jpg" alt="">
                 </div>
             </div>
         </section>
@@ -65,76 +59,150 @@
                 <div class="col-12">
                     <h2 class="mb-s">Cosa ti aspetta</h2>
                     <p>
-                        Questa sezione è pensata per comunicare in modo rapido ed efficente le caratteristiche chiave e i punti di forza dei corsi.
+                        I nostri corsi sono personalizzati e su misura per te.
                     </p> 
                 </div>
             </div>
         </section>
         <section class="keypoints">
+
             <div class="row mb-xxl">
-                <div class="col-12 col-md-6 col-lg-3">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/1-1.png" alt="">
-                    <h3 class="mb-s mt-s t-center">H3 here</h3>
-                    <p class="t-center">
-                        P here. 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu viverra diam, nec maximus est.
-                    </p> 
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="icon">
+                        <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="200" height="200" fill="#C7B299"/>
+                            <rect x="38" y="42" width="89.4684" height="89.4684" rx="5" fill="#534741" fill-opacity="0.8"/>
+                            <rect x="77.2407" y="73.3923" width="84.7595" height="84.7595" rx="5" fill="#534741" fill-opacity="0.8"/>
+                        </svg>
+                    </div>
+                    <h3 class="mb-s mt-s t-center">Trasparenza</h3>
+                    <p class="t-center">Potrai contattarmi per qualunque informazione e curiosità.</p> 
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/1-1.png" alt="">
-                    <h3 class="mb-s mt-s t-center">H3 here</h3>
-                    <p class="t-center">
-                        P here. 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu viverra diam, nec maximus est.
-                    </p> 
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="icon">
+                        <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="200" height="200" fill="#C7B299"/>
+                            <path d="M59.2572 92.2947H135.257V125.447H59.2572V92.2947Z" fill="#534741"/>
+                            <ellipse cx="97.2572" cy="125.447" rx="38" ry="15.9131" fill="#534741"/>
+                            <ellipse cx="97.2572" cy="92.2946" rx="38" ry="15.9131" fill="#C7B299"/>
+                            <path d="M59.4806 58L170.588 61.5143L121.216 100.158L29 87.4867L59.4806 58Z" fill="#534741"/>
+                        </svg>
+                    </div>
+                    <h3 class="mb-s mt-s t-center">Corsi personalizzati</h3>
+                    <p class="t-center">I corsi sono pensati per aiutarti in ogni momento e portarti passo dopo passo verso il risultato.</p> 
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/1-1.png" alt="">
-                    <h3 class="mb-s mt-s t-center">H3 here</h3>
-                    <p class="t-center">
-                        P here. 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu viverra diam, nec maximus est.
-                    </p> 
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="icon">  
+                        <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="200" height="200" fill="#C7B299"/>
+                            <path d="M75.0638 108.436V132.17H26V108.436C26 94.8876 36.9833 83.9043 50.5319 83.9043C64.0805 83.9043 75.0638 94.8876 75.0638 108.436Z" fill="#534741" stroke="#C7B299" stroke-width="2"/>
+                            <path d="M139.691 98.0638V121.798H90.6277V98.0638C90.6277 84.5152 101.611 73.5319 115.16 73.5319C128.708 73.5319 139.691 84.5152 139.691 98.0638Z" fill="#534741" stroke="#C7B299" stroke-width="2"/>
+                            <circle cx="115.559" cy="64.1543" r="16.1543" fill="#534741" stroke="#C7B299" stroke-width="2"/>
+                            <path d="M110.17 127.585V151.319H61.1064V127.585C61.1064 114.037 72.0897 103.053 85.6383 103.053C99.1869 103.053 110.17 114.037 110.17 127.585Z" fill="#534741" stroke="#C7B299" stroke-width="2"/>
+                            <circle cx="85.2394" cy="94.4734" r="16.1543" fill="#534741" stroke="#C7B299" stroke-width="2"/>
+                            <path d="M174 129.181V152.915H124.936V129.181C124.936 115.632 135.919 104.649 149.468 104.649C163.017 104.649 174 115.632 174 129.181Z" fill="#534741" stroke="#C7B299" stroke-width="2"/>
+                            <circle cx="50.9309" cy="76.9202" r="16.1543" fill="#534741" stroke="#C7B299" stroke-width="2"/>
+                            <circle cx="149.867" cy="93.6755" r="16.1543" fill="#534741" stroke="#C7B299" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="mb-s mt-s t-center">Supporto Post Corso</h3>
+                    <p class="t-center">Partecipando alle PizzaClass entrerai a fare parte della community di Dough Academy.</p> 
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/1-1.png" alt="">
-                    <h3 class="mb-s mt-s t-center">H3 here</h3>
-                    <p class="t-center">
-                        P here. 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu viverra diam, nec maximus est.
-                    </p> 
-                </div>
+                
             </div>
         </section>
+
+        <!-- Articolo in evidenza -->
+        <article class="articolo-in-home articolo-in-home__dark mb-l">
+            <div class="row mb-l">
+                <?php $sticky = get_option( 'sticky_posts' );
+                    rsort( $sticky );
+                    $args = array(
+                        'post__in' => $sticky,
+                        'posts_per_page' => 1
+                    );
+                    $sticky_query = new WP_Query( $args );
+                    while ( $sticky_query->have_posts() ) : $sticky_query->the_post(); ?>
+
+                             <div class="col-12 col-md-6 mb-m">
+                                <a href="<?php the_permalink(); ?>"><picture class="article__picture mb-m"><?php the_post_thumbnail(); ?></picture></a>
+                            </div>
+                            <div class="col-12 col-md-6 v-align-col-center">
+                                <p class="article__date p-little mb-xs"><?php echo get_the_date(); ?></p>
+                                <a href="<?php the_permalink(); ?>"><h2 class="article__title mb-m"><?php the_title(); ?></h2></a>
+                                <p class="article__excerpt p-little mb-m"><?php echo get_the_excerpt(); ?></p>
+                                <div><a href="<?php the_permalink(); ?>" class="link article__link">Leggi l'articolo</a></div>
+                            </div>
+
+                    <?php endwhile;
+                    wp_reset_postdata();
+                ?>
+            </div>
+        </article>
 
 
         <!--i Piatti che cunierai-->
         <section class="titolo-paragrafo">
             <div class="row t-center mb-l">
                 <div class="col-12">
-                    <h2 class="mb-s">I piatti che cucinerai</h2>
-                    <p>
-                        P here. 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu viverra diam, nec maximus est. Vestibulum condimentum turpis id ipsum volutpat, non gravida leo consequat. Sed mi libero, rutrum in maximus aliquet, sollicitudin nec nunc. Vestibulum vulputate diam vitae lobortis tempus.
-                    </p> 
+                    <h2>I piatti che cucinerai</h2>
                 </div>
             </div>
         </section>
         <section class="gallery">
-            <div class="row mb-xxl">
+            <!-- <div class="row mb-xxl">
                 <div class="col-lg-4 gallery__full-h">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/ph(3).jpg" alt="">
+                    <picture>
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/ph(3).jpg" alt="">
+                        <p class="capt">Pizza Napoletana Moderna</p>
+                    </picture>    
                 </div>
                 <div class="col-lg-8 gallery__split">
                     <div class="row">
-                        <div class="col-lg-6"><img src="<?php echo get_template_directory_uri(); ?>/img/ph(2).jpg" alt=""></div>
-                        <div class="col-lg-6"><img src="<?php echo get_template_directory_uri(); ?>/img/ph(2).jpg" alt=""></div>
+                        <div class="col-lg-6">
+                            <picture>
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/ph(2).jpg" alt="">
+                                <p class="capt">Focaccia</p>
+                            </picture>
+                        </div>
+                        <div class="col-lg-6">
+                            <picture>
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/ph(2).jpg" alt="">
+                                <p class="capt">Pane</p>
+                            </picture>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-12 gallery__full-w">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/ph(2).jpg" alt="">
+                            <picture>
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/ph(2).jpg" alt="">
+                                <p class="capt">Biga</p>
+                            </picture>    
                         </div>
                     </div>
+                </div>
+            </div> -->
+            <div class="row mb-xxl">
+                <div class="col-lg-4 gallery__full-h mb-m">
+                    <picture>
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/Dough_Academy_Napoletana-moderna.jpg" alt="Dough Academy pizza napoletana moderna">
+                        <p class="capt">Pizza Napoletana Moderna</p>
+                    </picture>    
+                </div>
+                <div class="col-lg-4 gallery__full-h mb-m">
+                    <picture>
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/Dough_Academy_Foccaccia.jpg" alt="Dough Academy focaccia">
+                        <p class="capt">Focaccia</p>
+                    </picture>
+                </div>
+                <div class="col-lg-4 gallery__full-h mb-m">
+                    <picture>
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/Dough_Academy_Biga.jpg" alt="Dough Academy biga">
+                        <p class="capt">Biga</p>
+                    </picture>
                 </div>
             </div>
         </section>
@@ -144,17 +212,98 @@
         <section class="fascia-evidenza fascia-evidenza__dark mb-xxl">
             <div class="row t-center">
                 <div class="col-12">
-                    <h2 class="mb-s">Pronto a iniziare</h2>
+                    <h2 class="mb-l">Pronto a iniziare</h2>
                     <p>
-                        P here. 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu viverra diam, nec maximus est. Vestibulum condimentum turpis id ipsum volutpat, non gravida leo consequat. Sed mi libero, rutrum in maximus aliquet, sollicitudin nec nunc. Vestibulum vulputate diam vitae lobortis tempus.
+                        Il buon pane, la pizza e le focacce hanno il profumo di casa, di domeniche in famiglia e con gli amici.
+                        Prepararsi la pizza in casa è un piacere, un momento da dedicare a se stessi e da condividere con le persone a cui si vuole bene.
+                        <br><br>
+                        La pizza è passione e studio, è voglia di mettersi in gioco, di migliorarsi e di imparare con costanza e amore. <br>
+                        Dough Academy è tutto questo.
                     </p> 
                 </div>
                 <div class="col-12">
-                    <a class="btn mt-m" href="#">Scopri i corsi</a>
+                    <a class="btn mt-l casa" href="<?php echo get_post_permalink( 109 ); ?>">Scopri i corsi</a>
                 </div>
                 <div class="col-12">
-                    <a class="link mt-m" href="#">Contattami</a> 
+                    <a class="link mt-m" id="contatti" href="#">Contattami</a> 
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Recensioni FB -->
+        <section class="recensioni mb-xxl">
+            <div class="row">
+                <div class="col-12 col-lg-4 mb-l">
+                    <picture>
+                        <div class="foto-profilo casa">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/r1.jpg" alt="">
+                            <div class="fb-badget">
+                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="22" cy="22" r="22" class="svg-social-icon-bg"/>
+                                    <path class="svg-social-icon" d="M18.4213 14.6507V17.952H16V22H18.4213V34H23.3973V22H26.7307C26.7307 22 27.0453 20.0587 27.1947 17.9413H23.4133V15.1733C23.4588 14.9169 23.5882 14.6828 23.7814 14.508C23.9745 14.3332 24.2203 14.2277 24.48 14.208H27.1893V10H23.5147C18.2987 10 18.4213 14.0427 18.4213 14.6507Z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </picture>    
+                    <a class="recensioni__name t-center">Raffaella Russo</a>
+                    <p class="recensioni__text t-center p-little">
+                        Grande persona, sempre disponibile, gentile e generoso, oltre che un eccellente professionista ! Grande maestro, non finirò mai di ringraziarlo per la passione trasmessa e gli insegnamenti che ci ha dato...!
+                        La sua Pizza Class è stata una grande scoperta. Non vedo l’ora di iscrivermi ai prossimi corsi.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-4 mb-l">
+                    <picture>
+                        <div class="foto-profilo casa">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/r2.jpg" alt="">
+                            <div class="fb-badget">
+                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="22" cy="22" r="22" class="svg-social-icon-bg"/>
+                                    <path class="svg-social-icon" d="M18.4213 14.6507V17.952H16V22H18.4213V34H23.3973V22H26.7307C26.7307 22 27.0453 20.0587 27.1947 17.9413H23.4133V15.1733C23.4588 14.9169 23.5882 14.6828 23.7814 14.508C23.9745 14.3332 24.2203 14.2277 24.48 14.208H27.1893V10H23.5147C18.2987 10 18.4213 14.0427 18.4213 14.6507Z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </picture>    
+                    <a class="recensioni__name t-center">Silvia Passerini</a>
+                    <p class="recensioni__text t-center p-little">
+                        Ho avuto la fortuna di partecipare alla Pizza Class di Mirko ed è un'esperienza che consiglio a chiunque abbia voglia di mettersi alla prova in questo mondo. Mirko è un grande insegnante, sempre disponibile a correggere i nostri errori, spiegarci soprattutto il motivo per permetterci di far meglio la volta successiva. Sono entrata nella pizza class con una grande passione, ne esco con un bagaglio di conoscenze allargate, ma ancor più voglia di mettere le mani in pasta. Professionista ed insegnante eccellente👏🏼👏🏼👏🏼
+                    </p>
+                </div>
+                <div class="col-12 col-lg-4 mb-l">
+                    <picture>
+                        <div class="foto-profilo casa">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/r3.jpg" alt="">
+                            <div class="fb-badget">
+                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="22" cy="22" r="22" class="svg-social-icon-bg"/>
+                                    <path class="svg-social-icon" d="M18.4213 14.6507V17.952H16V22H18.4213V34H23.3973V22H26.7307C26.7307 22 27.0453 20.0587 27.1947 17.9413H23.4133V15.1733C23.4588 14.9169 23.5882 14.6828 23.7814 14.508C23.9745 14.3332 24.2203 14.2277 24.48 14.208H27.1893V10H23.5147C18.2987 10 18.4213 14.0427 18.4213 14.6507Z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </picture>    
+                    <a class="recensioni__name t-center">Simone Innamorati Valentini</a>
+                    <p class="recensioni__text t-center p-little">
+                        Dopo essermi avventurata nel mondo della panificazione, necessitavo di una guida.. di qualcuno che non solo fosse competente e chiaro nelle spiegazioni, ma che fosse anche empatico, disponibile e paziente (visti i continui dubbi 🤣). Ho trovato tutto questo in Mirko. Consiglio vivamente il suo corso, anzi i suoi corsi.. visto che man mano me li faccio tutti!!! 😍🎉
+                    </p>
+                </div>
+                <div class="col-12 t-center">
+                    <a class="link recensioni__link mt-m" href="https://www.facebook.com/Sciefsavo/reviews" target="_blank">
+                        Leggi altre recensioni
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Form Mailchimp-->
+        <section class="fascia-evidenza fascia-evidenza__dark mb-xxl">
+            <div class="row t-center">
+                <div class="col-12">
+                    <h2 class="mb-s">Iscriviti alla newsletter ufficiale</h2>
+                    <p>Iscriviti alla newsletter Dough Academy per ricevere tutti i nostri aggiornamenti in tempo reale.</p> 
+                </div>
+                <div class="col-12">
+                    <a class="btn mt-l casa" href="<?php echo get_post_permalink( 389 ); ?>">Iscriviti</a>
                 </div>
             </div>
         </section>
@@ -166,7 +315,7 @@
                 <div class="col-12">
                     <h2 class="mb-s">#Dough Academy</h2>
                     <div class="row justify-content-center">
-                        <div class="col-3 col-lg-2">
+                        <div class="col-3 col-lg-2 casa">
                             <!--Facebook-->
                             <a href="<?php echo get_theme_mod("XY_social_facebook"); ?>" target="_blank">
                                 <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -175,7 +324,7 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="col-3 col-lg-2">
+                        <div class="col-3 col-lg-2 casa">
                             <!--Instagram-->
                             <a href="<?php echo get_theme_mod("XY_social_instagram"); ?>" target="_blank">
                                 <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -186,7 +335,7 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="col-3 col-lg-2">
+                        <div class="col-3 col-lg-2 casa">
                             <!--Youtube-->
                             <a href="<?php echo get_theme_mod("XY_social_youtube"); ?>" target="_blank">
                                 <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">

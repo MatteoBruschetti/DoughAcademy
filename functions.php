@@ -14,12 +14,13 @@
     
     //add CSS
     function XY_styles() {
-        wp_enqueue_style("XY-style", get_template_directory_uri().'/style.min.css');
         wp_enqueue_style("XY-grid", get_template_directory_uri().'/css-parts/bootstrap-grid.min.css');
+        wp_enqueue_style("XY-style", get_template_directory_uri().'/style.min.css');       
     }
     add_action("wp_enqueue_scripts", "XY_styles");
     //add JS
     function XY_scripts() {
+        wp_enqueue_script("XY-scrollreveal", get_template_directory_uri().'/js/scrollreveal.min.js', array(), null, false);
         wp_enqueue_script("XY-scriptjs", get_template_directory_uri().'/js/script.js', array("jquery"), null, true);
     }
     add_action("wp_enqueue_scripts", "XY_scripts");
@@ -99,7 +100,7 @@
         $mimes['svg'] = 'image/svg+xml';
         return $mimes;
     }
-    add_filter('upload_mimes', 'XY_svg_types'); 
+    add_filter('upload_mimes', 'XY_svg_types');
 
 
 
@@ -107,6 +108,9 @@
     -------------------------------------------------*/
     require dirname(__FILE__).'/function_parts/customizer.php';
     require dirname(__FILE__).'/function_parts/customize_backend.php';
+    require dirname(__FILE__).'/function_parts/wp-pattern.php';
 
     //CPT
-    require dirname(__FILE__).'/function_parts/cpt/CPT_corsi.php'; ?>
+    require dirname(__FILE__).'/function_parts/cpt/CPT_corsi.php'; 
+
+?>

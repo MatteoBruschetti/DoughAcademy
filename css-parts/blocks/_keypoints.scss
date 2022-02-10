@@ -1,8 +1,22 @@
 .keypoints{
-    img{
+
+    h3{
+        font-size: 1.7rem;
+    }
+
+    .icon{
+        height: 9rem;
+        text-align: center;
+        width: 100%;
         margin-top: 3rem;
-        @media #{$large}{
-        margin-top: 0;
+        margin-bottom: 2rem;  
+        opacity: 0.8;
+
+        @media #{$large}{margin-top: 0;
         }
+    }
+
+    .icon svg{
+        height: 100%;
     }
 }

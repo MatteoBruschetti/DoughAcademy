@@ -102,8 +102,25 @@ footer{
     }
 
 
-    //search bar
+    //iubenda
+    .iubenda-embed:not(.iubenda-nostyle){
+        color: $color-secondary !important;
+        background: transparent !important;
+        text-decoration: underline !important;
+        box-shadow: none !important;
+        font-family: $font-secondary !important;
+        font-weight: 400 !important;
+        opacity: 0.9 !important;
+
+        &:hover{
+            box-shadow: none !important;
+            opacity: 0.7 !important;
+        }
+    }
 
 
+}
 
+a.iubenda-tp-btn.iubenda-cs-preferences-link{
+    display: none !important;
 }

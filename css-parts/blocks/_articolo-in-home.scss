@@ -1,8 +1,8 @@
-.fascia-evidenza{
+.articolo-in-home{
     position: relative;
     padding: 6rem 0;
 
-    &.fascia-evidenza__light{
+    &.articolo-in-home__light{
         &::before{
             content: '';
             display: block;
@@ -12,11 +12,10 @@
             width: 150vw; height: 100%;
             background-color: $color-secondary;
         }
-
     }
 
 
-    &.fascia-evidenza__dark{
+    &.articolo-in-home__dark{
 
         &::before{
             content: '';
@@ -26,6 +25,17 @@
             z-index: -1;
             width: 150vw; height: 100%;
             background-color: $color-primary;
+        }
+
+        @media #{$large} {        
+            
+            &::before{
+            height: 85%;}
+            
+        }
+
+        .article__date{
+            color: $color-secondary;
         }
 
         p{
