@@ -187,22 +187,28 @@
             </div> -->
             <div class="row mb-xxl">
                 <div class="col-lg-4 gallery__full-h mb-m">
+                    <a href="http://doughacademy.local/corsi/la-pizza-napoletana-moderna/">
                     <picture>
                         <img src="<?php echo get_template_directory_uri(); ?>/img/Dough_Academy_Napoletana-moderna.jpg" alt="Dough Academy pizza napoletana moderna">
                         <p class="capt">Pizza Napoletana Moderna</p>
-                    </picture>    
+                    </picture> 
+                    </a>   
                 </div>
                 <div class="col-lg-4 gallery__full-h mb-m">
+                    <a href="http://doughacademy.local/corsi/la-focaccia/">
                     <picture>
                         <img src="<?php echo get_template_directory_uri(); ?>/img/Dough_Academy_Foccaccia.jpg" alt="Dough Academy focaccia">
                         <p class="capt">Focaccia</p>
                     </picture>
+                    </a>
                 </div>
                 <div class="col-lg-4 gallery__full-h mb-m">
+                    <a href="http://doughacademy.local/corsi/corso-3-2/">
                     <picture>
                         <img src="<?php echo get_template_directory_uri(); ?>/img/Dough_Academy_Biga.jpg" alt="Dough Academy biga">
                         <p class="capt">Biga</p>
                     </picture>
+                    </a>
                 </div>
             </div>
         </section>
