@@ -1585,22 +1585,65 @@ article a {
   }
 }
 
-.wpcf7 input, .wpcf7 textarea {
+.wp-block-image img {
+  border-radius: 0.75rem !important;
+}
+
+.fixed-bar {
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  min-width: 100%;
+  background-color: #534741;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.fixed-bar a {
+  display: block;
+  color: #C7B299;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-box-shadow: 0px -4px 32px -10px rgba(0, 0, 0, 0.32);
+          box-shadow: 0px -4px 32px -10px rgba(0, 0, 0, 0.32);
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+.fixed-bar a p {
+  margin: 1.6rem 0;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.fixed-bar:hover {
+  background-color: #C7B299;
+}
+
+.fixed-bar:hover a {
+  color: #534741;
+}
+
+.wpcf7 input, .wpcf7 textarea, .wpcf7 select {
+  background-color: #FEFEFE;
   border: none;
   border-radius: 50vh;
   min-height: 32px;
   margin: 0.5rem 0 1.6rem 0;
   width: 100%;
   padding: 0 16px;
+  font-size: 0.9rem;
 }
 
 @media (min-width: 992px) {
-  .wpcf7 input, .wpcf7 textarea {
+  .wpcf7 input, .wpcf7 textarea, .wpcf7 select {
     max-width: 40vw;
   }
 }
 
-.wpcf7 input:focus-visible, .wpcf7 textarea:focus-visible {
+.wpcf7 input:focus-visible, .wpcf7 textarea:focus-visible, .wpcf7 select:focus-visible {
   outline-color: #534741;
 }
 

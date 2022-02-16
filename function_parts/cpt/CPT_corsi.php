@@ -108,7 +108,7 @@
         $DA_query = new WP_Query( $args );
         if( $DA_query->have_posts() ){ ?>
 
-            <section>
+            <section class="pt-l">
 
                 <div class="row subpage-hero mb-xxl">
                     <div class="col-12 col-lg-6 subpage-hero__text">
