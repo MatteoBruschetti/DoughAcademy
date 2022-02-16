@@ -6,10 +6,10 @@
 
     @media #{$xsmall}{
         padding: 3rem;
-        border-radius: 0.75rem;
+        border-radius: $outer-border-radius;
     }
     @media #{$large}{
-        border-radius: 0.75rem 0 0 0.75rem;
+        border-radius: $outer-border-radius 0 0 $outer-border-radius;
 
     }
     
@@ -37,6 +37,6 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        border-radius: 0 0.75rem 0.75rem 0;
+        border-radius: 0 $outer-border-radius $outer-border-radius 0;
     }
 }

@@ -604,11 +604,11 @@ nav.scrolled .current_page_item a {
   border-bottom: solid 3px #C7B299;
 }
 
-.single-corsi nav .menu-item-549 a {
+.single-corsi nav .menu-item-314 a {
   border-bottom: solid 3px #534741;
 }
 
-.single-corsi nav.scrolled .menu-item-549 a {
+.single-corsi nav.scrolled .menu-item-314 a {
   border-bottom: solid 3px #C7B299;
 }
 
@@ -857,7 +857,7 @@ article a {
 
 .article__picture {
   height: 400px;
-  display: inline-block;
+  display: block;
 }
 
 .article__picture img {
@@ -928,8 +928,8 @@ article a {
 }
 
 .card:hover {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
+  -webkit-transform: scale(1.005);
+          transform: scale(1.005);
   -webkit-box-shadow: 0px 0px 22px rgba(83, 71, 65, 0.4);
           box-shadow: 0px 0px 22px rgba(83, 71, 65, 0.4);
   opacity: 0.9;
@@ -957,6 +957,7 @@ article a {
 .newsletter #mc_embed_signup form .mc-field-group label {
   font-family: "Open Sans", sans-serif;
   opacity: 0.9;
+  margin-bottom: 0.5rem;
   font-size: 1rem;
 }
 
@@ -968,6 +969,16 @@ article a {
 
 .newsletter #mc_embed_signup form .mc-field-group input {
   border-radius: 50vh;
+}
+
+@media (min-width: 992px) {
+  .newsletter #mc_embed_signup form .mc-field-group input {
+    max-width: 50vw;
+  }
+}
+
+.newsletter #mc_embed_signup form .mc-field-group input:focus-visible {
+  outline-color: #534741;
 }
 
 .newsletter #mc_embed_signup form .mc-field-group#mergeRow-gdpr {
@@ -992,11 +1003,13 @@ article a {
   font-weight: 600;
   letter-spacing: 2px;
   border-radius: 100px;
-  padding: 0 32px;
+  padding: 16px 32px;
   -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
           box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  /*iOS iverwrite fix*/
+  -webkit-appearance: none !important;
 }
 
 .newsletter #mc_embed_signup .button:hover {
@@ -1413,13 +1426,13 @@ article a {
 @media (min-width: 576px) {
   .subpage-hero__text {
     padding: 3rem;
-    border-radius: 0.75rem;
+    border-radius: calc( 0.35rem + ( 1.3rem * 2 ) / 2);
   }
 }
 
 @media (min-width: 992px) {
   .subpage-hero__text {
-    border-radius: 0.75rem 0 0 0.75rem;
+    border-radius: calc( 0.35rem + ( 1.3rem * 2 ) / 2) 0 0 calc( 0.35rem + ( 1.3rem * 2 ) / 2);
   }
 }
 
@@ -1452,7 +1465,7 @@ article a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 0 0.75rem 0.75rem 0;
+  border-radius: 0 calc( 0.35rem + ( 1.3rem * 2 ) / 2) calc( 0.35rem + ( 1.3rem * 2 ) / 2) 0;
 }
 
 .pizza {
@@ -1586,11 +1599,51 @@ article a {
   }
 }
 
-.wpcf7-form-control {
-  border-radius: 0.75rem;
-  border: 0;
+.wpcf7 input, .wpcf7 textarea {
+  border: none;
+  border-radius: 50vh;
+  min-height: 32px;
+  margin: 0.5rem 0 1.6rem 0;
+  width: 100%;
+  padding: 0 16px;
 }
 
-.wpcf7-form-control input.wpcf7-submit {
+@media (min-width: 992px) {
+  .wpcf7 input, .wpcf7 textarea {
+    max-width: 50vw;
+  }
+}
+
+.wpcf7 input:focus-visible, .wpcf7 textarea:focus-visible {
+  outline-color: #534741;
+}
+
+.wpcf7 textarea {
+  border-radius: 0.75rem;
+  padding: 16px;
+}
+
+.wpcf7 input.wpcf7-submit {
+  font-family: "Open Sans", sans-serif;
+  width: auto;
+  padding: 16px 32px;
+  color: #534741;
+  background: #FEFEFE;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  cursor: pointer;
+  /*iOS iverwrite fix*/
   -webkit-appearance: none !important;
+}
+
+.wpcf7 input.wpcf7-submit:hover {
+  color: #C7B299;
+  background-color: #534741;
+}
+
+.wpcf7 .wpcf7-not-valid-tip {
+  margin: -1rem 0 1.6rem;
 }

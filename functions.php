@@ -1,4 +1,4 @@
-<?php function XY_setup_theme() {
+<?php function DA_setup_theme() {
         //tag title dinamico inserito in automatico nell'header
         add_theme_support("title-tag");
          //add feed RSS supports
@@ -8,22 +8,22 @@
         //aggiunta di una posizione del menu
         register_nav_menu("header", "Navbar Header");
     }
-    add_action("after_setup_theme", "XY_setup_theme");
+    add_action("after_setup_theme", "DA_setup_theme");
 
     
     
     //add CSS
-    function XY_styles() {
-        wp_enqueue_style("XY-grid", get_template_directory_uri().'/css-parts/bootstrap-grid.min.css');
-        wp_enqueue_style("XY-style", get_template_directory_uri().'/style.min.css');       
+    function DA_styles() {
+        wp_enqueue_style("DA-grid", get_template_directory_uri().'/css-parts/bootstrap-grid.min.css');
+        wp_enqueue_style("DA-style", get_template_directory_uri().'/style.min.css');       
     }
-    add_action("wp_enqueue_scripts", "XY_styles");
+    add_action("wp_enqueue_scripts", "DA_styles");
     //add JS
-    function XY_scripts() {
-        wp_enqueue_script("XY-scrollreveal", get_template_directory_uri().'/js/scrollreveal.min.js', array(), null, false);
-        wp_enqueue_script("XY-scriptjs", get_template_directory_uri().'/js/script.js', array("jquery"), null, true);
+    function DA_scripts() {
+        wp_enqueue_script("DA-scrollreveal", get_template_directory_uri().'/js/scrollreveal.min.js', array(), null, false);
+        wp_enqueue_script("DA-scriptjs", get_template_directory_uri().'/js/script.js', array("jquery"), null, true);
     }
-    add_action("wp_enqueue_scripts", "XY_scripts");
+    add_action("wp_enqueue_scripts", "DA_scripts");
 
 
 
@@ -57,7 +57,7 @@
     });
 
     //Remove emoji
-    function XY_disable_emojis() {
+    function DA_disable_emojis() {
         remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
         remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
         remove_action( 'wp_print_styles', 'print_emoji_styles' );
@@ -68,7 +68,7 @@
         add_filter( 'tiny_mce_plugins', 'disable_emojis_tinymce' );
         add_filter( 'wp_resource_hints', 'disable_emojis_remove_dns_prefetch', 10, 2 );
     }
-    add_action( 'init', 'XY_disable_emojis' );
+    add_action( 'init', 'DA_disable_emojis' );
         function disable_emojis_tinymce( $plugins ) {
             if ( is_array( $plugins ) ) {
             return array_diff( $plugins, array( 'wpemoji' ) );
@@ -85,10 +85,21 @@
         }
     
     //Remove embeded
-    function XY_disable_embed(){
+    function DA_disable_embed(){
         wp_dequeue_script( 'wp-embed' );
        }
-       add_action( 'wp_footer', 'XY_disable_embed' );
+    add_action( 'wp_footer', 'DA_disable_embed' );
+
+    //disable gb Sidebar Settings
+    function DA_disable_gutenberg_sidebar_settings() {
+        //hide Color
+        add_theme_support( 'disable-custom-colors' );
+        add_theme_support( 'disable-custom-colors' );
+        add_theme_support( 'editor-color-palette' );
+        add_theme_support( 'editor-gradient-presets', [] );
+        add_theme_support( 'disable-custom-gradients' );
+    }
+    add_action( 'after_setup_theme', 'DA_disable_gutenberg_sidebar_settings' );
 
 
 
@@ -96,11 +107,39 @@
     /*ADD
     --------------------------------------------*/
     // ADD support to SVG upload
-    function XY_svg_types($mimes) {
+    function DA_svg_types($mimes) {
         $mimes['svg'] = 'image/svg+xml';
         return $mimes;
     }
-    add_filter('upload_mimes', 'XY_svg_types');
+    add_filter('upload_mimes', 'DA_svg_types');
+
+
+    //custom GB css
+    function DA_custom_fullscreeneditor_logo(){
+        $screen = get_current_screen();
+        if( ! $screen->is_block_editor ) {
+            return;
+        }
+        //ADD color to spacers
+        //ADD dashed border to groups
+        echo '<style>
+            .wp-block-spacer{
+                background: rgba(211, 211, 211, 0.3);
+            }
+            .wp-block-group{
+                border: 2px dashed #C7B299;
+                padding: 16px;
+            }
+        </style>';
+
+        //HIDE unwanted gb block settings
+        echo '<style>
+        .components-panel .typography-block-support-panel{
+            display:none;
+        }
+        </style>';
+    }
+    add_action( 'admin_head', 'DA_custom_fullscreeneditor_logo' );
 
 
 

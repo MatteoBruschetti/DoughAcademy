@@ -2,15 +2,15 @@
 
     /*Remove default wp gutemberg pattern
     -----------------------------------------*/
-    function XY_removeCorePatterns() {
+    function DA_removeCorePatterns() {
         remove_theme_support('core-block-patterns');
     }
-    add_action('after_setup_theme', 'XY_removeCorePatterns');
+    add_action('after_setup_theme', 'DA_removeCorePatterns');
 
 
     /*Add custom wp Gutenberg pattern
     -----------------------------------------*/
-    function XY_custom_wp_block_patterns() {
+    function DA_custom_wp_block_patterns() {
 
         // CATEGORY
         register_block_pattern_category(
@@ -144,4 +144,4 @@
             )
         );
     }    
-    add_action( 'init', 'XY_custom_wp_block_patterns' );
+    add_action( 'init', 'DA_custom_wp_block_patterns' );

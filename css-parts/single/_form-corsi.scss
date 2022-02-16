@@ -1,10 +1,53 @@
-.wpcf7-form-control{
-    border-radius: 0.75rem;
-    border: 0;
+.wpcf7{
+
+    input, textarea{
+        border: none;
+        border-radius: 50vh;
+        min-height: 32px;
+        margin: 0.5rem 0 1.6rem 0;
+        width: 100%;
+        padding: 0 16px;
+
+        @media #{$large}{
+            max-width: 50vw;
+        }
+
+        &:focus-visible{
+            outline-color: $color-primary;
+        }
+    }
+
+    textarea{
+        border-radius: 0.75rem;
+        padding: 16px;
+    }
 
 
-    input.wpcf7-submit{
+    input.wpcf7-submit{ 
+        font-family: $font-secondary;
+        width: auto;
+        padding: 16px 32px;
+        color: $color-primary;
+        background: $color-white;
+        font-size: 1rem;
+        font-weight: 800;
+        text-transform: uppercase; text-decoration: none;
+        letter-spacing: 2px;
+        cursor: pointer;
+        
+        /*iOS iverwrite fix*/
         -webkit-appearance: none !important;
+
+        &:hover{
+            color: $color-secondary;
+            background-color: $color-primary;
+        }
+    }
+
+
+
+    .wpcf7-not-valid-tip{
+        margin: -1rem 0 1.6rem;
     }
 }
-
+ 
