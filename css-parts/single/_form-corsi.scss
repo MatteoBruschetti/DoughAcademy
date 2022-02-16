@@ -11,9 +11,6 @@
         @media #{$large}{
             max-width: 40vw; 
         }
-        @media #{$xlarge}{
-            max-width: 30vw; 
-        }
 
         &:focus-visible{
             outline-color: $color-primary;

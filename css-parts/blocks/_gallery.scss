@@ -1,5 +1,5 @@
 .gallery{
-    
+
     img{
         display: block;
         border-radius: 0.75rem;
@@ -15,21 +15,6 @@
             object-position: center;
         }
     }
-
-    // .gallery__split{
-    //     img{
-    //         margin-top: 1.75rem;
-    //         @media #{$large}{
-    //             margin-top: 0;
-    //         }
-    //     }
-    // }
-
-    // .gallery__full-w{
-    //     img{
-    //         margin-top: 1.75rem;
-    //     }
-    // }
 
     picture{
         display: block;

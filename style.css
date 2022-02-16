@@ -1600,12 +1600,6 @@ article a {
   }
 }
 
-@media (min-width: 1200px) {
-  .wpcf7 input, .wpcf7 textarea {
-    max-width: 30vw;
-  }
-}
-
 .wpcf7 input:focus-visible, .wpcf7 textarea:focus-visible {
   outline-color: #534741;
 }
