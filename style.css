@@ -1375,20 +1375,6 @@ article a {
      object-position: center;
 }
 
-.gallery .gallery__split img {
-  margin-top: 1.75rem;
-}
-
-@media (min-width: 992px) {
-  .gallery .gallery__split img {
-    margin-top: 0;
-  }
-}
-
-.gallery .gallery__full-w img {
-  margin-top: 1.75rem;
-}
-
 .gallery picture {
   display: block;
   position: relative;
@@ -1412,8 +1398,8 @@ article a {
 }
 
 .gallery picture:hover {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
+  -webkit-transform: scale(1.006);
+          transform: scale(1.006);
   opacity: 0.9;
 }
 
@@ -1610,7 +1596,13 @@ article a {
 
 @media (min-width: 992px) {
   .wpcf7 input, .wpcf7 textarea {
-    max-width: 50vw;
+    max-width: 40vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wpcf7 input, .wpcf7 textarea {
+    max-width: 30vw;
   }
 }
 

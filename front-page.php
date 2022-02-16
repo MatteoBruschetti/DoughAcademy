@@ -143,43 +143,55 @@
             </div>
         </article>
 
-
         <!--i Piatti che cunierai-->
         <section class="titolo-paragrafo">
             <div class="row t-center mb-l">
-                <div class="col-12">
+                <div class="col-12 mb-s">
                     <h2>I piatti che cucinerai</h2>
                 </div>
             </div>
         </section>
-        <section class="gallery">
-            <div class="row mb-xxl">
-                <div class="col-lg-4 gallery__full-h mb-m">
-                    <a href="http://doughacademy.local/corsi/la-pizza-napoletana-moderna/">
-                    <picture>
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/Dough_Academy_Napoletana-moderna.jpg" alt="Dough Academy pizza napoletana moderna">
-                        <p class="capt">Pizza Napoletana Moderna</p>
-                    </picture> 
-                    </a>   
-                </div>
-                <div class="col-lg-4 gallery__full-h mb-m">
-                    <a href="http://doughacademy.local/corsi/la-focaccia/">
-                    <picture>
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/Dough_Academy_Foccaccia.jpg" alt="Dough Academy focaccia">
-                        <p class="capt">Focaccia</p>
-                    </picture>
-                    </a>
-                </div>
-                <div class="col-lg-4 gallery__full-h mb-m">
-                    <a href="http://doughacademy.local/corsi/corso-3-2/">
-                    <picture>
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/Dough_Academy_Biga.jpg" alt="Dough Academy biga">
-                        <p class="capt">Biga</p>
-                    </picture>
-                    </a>
-                </div>
-            </div>
-        </section>
+
+        <?php $args = array(
+            'post_type'         => 'corsi',
+            'post_status'       => 'publish',
+            'orderby'           => 'count',
+            'order'             => 'DESC',
+            'posts_per_page'    => 3,
+            'categoria_tag'     =>  $categoria
+        );
+
+        $DA_query = new WP_Query( $args );
+        if( $DA_query->have_posts() ){ ?>
+            <section class="gallery">
+                <div class="row mb-xxl">
+                    <?php
+                    // RICERCA POST NATIVI
+                    while( $DA_query->have_posts() ){
+                        $DA_query->the_post();
+                        global $post;
+
+                        //get alt text of thumbnail
+                        $thumbnail_id  = get_post_thumbnail_id( $post->ID ); $thumbnail_alt = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true );
+                        ?>
+
+                            <div class="col-lg-4 gallery__full-h mb-m">
+                                <a href="<?php the_permalink(); ?>">
+                                    <picture>
+                                        <?php the_post_thumbnail(); ?>
+                                        <p class="capt"><?php the_title(); ?></p>
+                                    </picture> 
+                                </a>   
+                            </div>
+                        <?php
+                    }
+                    wp_reset_postdata();
+                    ?>
+                </div> 
+            </section>
+            <?php
+        }
+        ?>
 
 
         <!--Fascia in evidenza-->
