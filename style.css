@@ -821,6 +821,12 @@ a.iubenda-tp-btn.iubenda-cs-preferences-link {
 RECCOMENDATIONS for target size by Apple
     DESKTOP and MOBILE minimun raget size = 44px X 44px 
 --------------------------------------------------*/
+/* 
+    FIXING INNER BORDER RADIUS OF CARDS IMG
+    https://codepen.io/joshwcomeau/pen/ExgeyPK
+    Formula = 
+    Outer radius should be increase by half of the size difference
+  */
 article {
   height: 100%;
   display: -webkit-box;
@@ -855,7 +861,7 @@ article a {
 }
 
 .article__picture img {
-  border-radius: 0.75rem;
+  border-radius: 0.35rem;
   width: auto;
   max-width: 100%;
   height: 100%;
@@ -890,7 +896,7 @@ article a {
 
 .article__link {
   color: #534741;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.3rem;
 }
 
 .flex-center {
@@ -909,10 +915,10 @@ article a {
 
 .card {
   width: 100%;
-  border-radius: 0.75rem;
+  border-radius: calc( 0.35rem + ( 1.3rem * 2 ) / 2);
   -webkit-box-shadow: 0px 0px 18px rgba(83, 71, 65, 0.16);
           box-shadow: 0px 0px 18px rgba(83, 71, 65, 0.16);
-  padding: 1.5rem;
+  padding: 1.3rem;
   margin-right: 0px;
   margin-left: 0px;
   -webkit-transform: scale(1);
@@ -1578,4 +1584,13 @@ article a {
   .single-post main .wp-block-media-text .wp-block-media-text__content, .single-corsi main .wp-block-media-text .wp-block-media-text__content {
     padding: 0 8%;
   }
+}
+
+.wpcf7-form-control {
+  border-radius: 0.75rem;
+  border: 0;
+}
+
+.wpcf7-form-control input.wpcf7-submit {
+  -webkit-appearance: none !important;
 }

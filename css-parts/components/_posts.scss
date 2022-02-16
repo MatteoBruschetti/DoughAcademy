@@ -1,3 +1,14 @@
+/* 
+    FIXING INNER BORDER RADIUS OF CARDS IMG
+    https://codepen.io/joshwcomeau/pen/ExgeyPK
+    Formula = 
+    Outer radius should be increase by half of the size difference
+  */
+
+$card-padding: 1.3rem;
+$inner-border-radius: 0.35rem;
+$outer-border-radius: calc( #{$inner-border-radius} + ( #{$card-padding} * 2 ) / 2 );
+
 article{
     height: 100%;
     display: flex;
@@ -21,7 +32,7 @@ article{
     display: inline-block;
 
     img{
-        border-radius: 0.75rem;
+        border-radius: $inner-border-radius;
         width: auto; max-width: 100%;
         height: 100%; max-height: 400px;
         object-fit: cover; object-position: center;
@@ -53,7 +64,7 @@ article{
 
 .article__link{
     color: $color-primary;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1.3rem;
 }
 
 .flex-center{
@@ -65,9 +76,9 @@ article{
 
 .card{
     width: 100%;
-    border-radius: 0.75rem;
+    border-radius: $outer-border-radius;
     box-shadow: 0px 0px 18px rgba($color-primary, 0.16);    
-    padding: 1.5rem;
+    padding: $card-padding;
     margin-right: 0px;
     margin-left: 0px;
     transform: scale(1);
