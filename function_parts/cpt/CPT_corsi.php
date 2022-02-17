@@ -136,7 +136,7 @@
                         //get alt text of thumbnail
                         $thumbnail_id  = get_post_thumbnail_id( $post->ID ); $thumbnail_alt = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true );
                         ?>
-                            <a href="<?php the_permalink(); ?>" class="col-12 col-lg-6 mb-xxl no-dec">
+                            <a href="<?php the_permalink(); ?>" class="col-12 col-lg-6 mb-xxl no-dec push-up">
                                 <article class="card casa">
                                     <div class="flex-top">
                                         <picture class="article__picture mb-m"><?php the_post_thumbnail(); ?></picture>

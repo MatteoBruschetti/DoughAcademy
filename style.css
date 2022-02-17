@@ -921,18 +921,26 @@ article a {
   padding: 1.3rem;
   margin-right: 0px;
   margin-left: 0px;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -webkit-transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .card:hover {
-  -webkit-transform: scale(1.005);
-          transform: scale(1.005);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
   -webkit-box-shadow: 0px 0px 22px rgba(83, 71, 65, 0.4);
           box-shadow: 0px 0px 22px rgba(83, 71, 65, 0.4);
   opacity: 0.9;
+}
+
+.push-up {
+  -webkit-transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.push-up:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 /*Sticky post*/
@@ -1378,8 +1386,9 @@ article a {
 .gallery picture {
   display: block;
   position: relative;
-  -webkit-transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  border-radius: 0.75rem;
+  -webkit-transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .gallery picture .capt {
@@ -1398,8 +1407,10 @@ article a {
 }
 
 .gallery picture:hover {
-  -webkit-transform: scale(1.006);
-          transform: scale(1.006);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0px 0px 22px rgba(83, 71, 65, 0.4);
+          box-shadow: 0px 0px 22px rgba(83, 71, 65, 0.4);
   opacity: 0.9;
 }
 
@@ -1587,6 +1598,10 @@ article a {
 
 .wp-block-image img {
   border-radius: 0.75rem !important;
+}
+
+.wp-block-group p {
+  max-width: 80ch;
 }
 
 .fixed-bar {

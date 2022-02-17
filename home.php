@@ -64,7 +64,7 @@
                 $sticky_query = new WP_Query( $args );
                 while ( $sticky_query->have_posts() ) : $sticky_query->the_post(); ?>
 
-                    <a href="<?php the_permalink(); ?>" class="col-12 col-lg-6 mb-xxl no-dec">
+                    <a href="<?php the_permalink(); ?>" class="col-12 col-lg-6 mb-xxl no-dec push-up">
                         <article class="card casa">
                             <div class="flex-top">
                                 <picture class="article__picture mb-m"><?php the_post_thumbnail(); ?></picture>

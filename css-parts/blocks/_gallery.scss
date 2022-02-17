@@ -19,6 +19,7 @@
     picture{
         display: block;
         position: relative;
+        border-radius: 0.75rem;
 
         .capt{
             font-weight: 600;
@@ -32,10 +33,11 @@
             color: $color-secondary;
         }
 
-        transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
         &:hover {
-            transform: scale(1.006);
+            transform: translateY(-3px);
+            box-shadow: 0px 0px 22px rgba($color-primary, 0.40);    
             opacity: 0.9;
         }
     }

@@ -25,15 +25,19 @@ if ( have_posts() ) {
     <div class="container pb-s pt-m">
         <?php the_content(); ?>
 
-        <!--Form Mailchimp-->
+        <!--FASCIA CTA-->
         <section class="fascia-evidenza fascia-evidenza__dark mt-l mb-xxl">
             <div class="row t-center">
                 <div class="col-12">
-                    <h2 class="mb-s">Iscriviti alla newsletter ufficiale</h2>
-                    <p>Iscriviti alla newsletter Dough Academy per ricevere tutti i nostri aggiornamenti in tempo reale.</p> 
+                    <h2 class="mb-l">Ti aspetto per il tuo primo giorno di scuola!</h2>
+                    <p>
+                        Il buon pane, la pizza e le focacce hanno il profumo di casa, di domeniche in famiglia e con gli amici. Prepararsi la pizza in casa è un piacere, un momento da dedicare a se stessi e da condividere con le persone a cui si vuole bene.
+                        <br><br>
+                        Iscriviti ora alla pizza class e impara l’arte bianca a casa con professionalità e competenza.
+                    </p> 
                 </div>
                 <div class="col-12">
-                    <a class="btn mt-l casa" href="<?php echo get_post_permalink( 389 ); ?>">Iscriviti</a>
+                    <a class="btn mt-l casa" href="<?php echo $formLink . $fieldValue?>">Iscriviti ora</a>
                 </div>
             </div>
         </section>
