@@ -609,11 +609,11 @@ nav.scrolled .current_page_item a {
   border-bottom: solid 3px #C7B299;
 }
 
-.single-corsi nav #menu-item-314 a, .page-id-645 nav #menu-item-314 a {
+.single-corsi nav #menu-item-707 a, .page-id-645 nav #menu-item-707 a {
   border-bottom: solid 3px #534741;
 }
 
-.single-corsi nav.scrolled #menu-item-314 a, .page-id-645 nav.scrolled #menu-item-314 a {
+.single-corsi nav.scrolled #menu-item-707 a, .page-id-645 nav.scrolled #menu-item-707 a {
   border-bottom: solid 3px #C7B299;
 }
 
@@ -1017,6 +1017,8 @@ article a {
   letter-spacing: 2px;
   border-radius: 100px;
   padding: 16px 32px;
+  height: auto;
+  line-height: 100%;
   -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
           box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
