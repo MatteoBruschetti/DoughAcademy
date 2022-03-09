@@ -54,3 +54,6 @@ img{
 main{
   overflow-x: hidden;
 }
+
+/*Hide reCaptcha v3*/
+.grecaptcha-badge{display: none !important;}

@@ -460,6 +460,11 @@ main {
   overflow-x: hidden;
 }
 
+/*Hide reCaptcha v3*/
+.grecaptcha-badge {
+  display: none !important;
+}
+
 nav {
   width: 100vw;
   max-width: 100%;
