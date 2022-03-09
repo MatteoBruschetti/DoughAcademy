@@ -164,7 +164,7 @@
         $DA_query = new WP_Query( $args );
         if( $DA_query->have_posts() ){ ?>
             <section class="gallery">
-                <div class="row mb-xxl">
+                <div class="row justify-content-center mb-xxl">
                     <?php
                     // RICERCA POST NATIVI
                     while( $DA_query->have_posts() ){
