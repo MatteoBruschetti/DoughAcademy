@@ -609,11 +609,11 @@ nav.scrolled .current_page_item a {
   border-bottom: solid 3px #C7B299;
 }
 
-.single-corsi nav .menu-item-623 a {
+.single-corsi nav #menu-item-707 a, .page-id-645 nav #menu-item-707 a {
   border-bottom: solid 3px #534741;
 }
 
-.single-corsi nav.scrolled .menu-item-623 a {
+.single-corsi nav.scrolled #menu-item-707 a, .page-id-645 nav.scrolled #menu-item-707 a {
   border-bottom: solid 3px #C7B299;
 }
 
