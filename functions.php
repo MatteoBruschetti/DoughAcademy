@@ -114,39 +114,12 @@
     add_filter('upload_mimes', 'DA_svg_types');
 
 
-    //custom GB css
-    function DA_custom_fullscreeneditor_logo(){
-        $screen = get_current_screen();
-        if( ! $screen->is_block_editor ) {
-            return;
-        }
-        //ADD color to spacers
-        //ADD dashed border to groups
-        echo '<style>
-            .wp-block-spacer{
-                background: rgba(211, 211, 211, 0.3);
-            }
-            .wp-block-group{
-                border: 2px dashed #C7B299;
-                padding: 16px;
-            }
-        </style>';
-
-        //HIDE unwanted gb block settings
-        echo '<style>
-        .components-panel .typography-block-support-panel{
-            display:none;
-        }
-        </style>';
-    }
-    add_action( 'admin_head', 'DA_custom_fullscreeneditor_logo' );
-
-
 
     /*FUNCTION PARTS
     -------------------------------------------------*/
     require dirname(__FILE__).'/function_parts/customizer.php';
     require dirname(__FILE__).'/function_parts/customize_backend.php';
+    require dirname(__FILE__).'/function_parts/customize-gb.php';
     require dirname(__FILE__).'/function_parts/wp-pattern.php';
 
     //CPT

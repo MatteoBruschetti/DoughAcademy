@@ -112,12 +112,9 @@
 
                 <div class="row subpage-hero mb-xxl">
                     <div class="col-12 col-lg-6 subpage-hero__text">
-                            <p class="overtitle">Dough Academy</p> 
-                            <h1 class="mb-m">Pizza Class</h1>
-                            <p>
-                                <span style="color:red;">P here.</span> 
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu viverra diam, nec maximus est. Vestibulum condimentum turpis id ipsum volutpat, non gravida leo consequat. Sed mi libero, rutrum in maximus aliquet, sollicitudin nec nunc. Vestibulum vulputate diam vitae lobortis tempus.
-                            </p> 
+                            <p class="overtitle">Benvenuto nei corsi</p> 
+                            <h1 class="mb-m">Dough Academy</h1>
+                            <p>Le nostre pizza class  sono delle vere e proprie scuole in cui si imparano nozioni e competenze in modo semplice, pratico e coinvolgente.</p>
                     </div>
                     <div class="col-12 col-lg-6 subpage-hero__img d-sm-none d-lg-flex">
                         <picture style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/Dough_Academy_Savoia-Pizza-Class.jpg')">

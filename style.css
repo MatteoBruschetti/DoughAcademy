@@ -4,7 +4,7 @@ Theme Name: Dough Academy
 Theme URI: 
 Author: Federico Toldo • Matteo Bruschetti
 Author URI: 
-Description: Official custom WP theme for Douch Academy
+Description: Official custom WP theme for Dough Academy. Ciao Mirko👋👋
 Version: 2.1
 */
 /*------------------------------------------------------------------------------
@@ -1496,6 +1496,12 @@ article a {
   /*----------------------------------------
         BLOCK testo immagine
         -----------------------------------------*/
+  /*----------------------------------------
+        BLOCK file
+        -----------------------------------------*/
+  /*----------------------------------------
+        BLOCK video
+        -----------------------------------------*/
 }
 
 .single-post main img, .single-corsi main img {
@@ -1523,34 +1529,64 @@ article a {
   font-weight: 700;
 }
 
+.single-post main strong, .single-corsi main strong {
+  color: #534741;
+}
+
 .single-post main .wp-block-separator, .single-corsi main .wp-block-separator {
   border-color: #534741;
 }
 
-.single-post main ul, .single-corsi main ul {
-  list-style: disc;
+.single-post main ol, .single-post main ul, .single-corsi main ol, .single-corsi main ul {
+  list-style-position: outside;
+  margin-left: 1.5rem;
   font-size: 1rem;
-  margin-left: 1rem;
-}
-
-@media (min-width: 768px) {
-  .single-post main ul, .single-corsi main ul {
-    margin-left: 0;
-  }
 }
 
 @media (min-width: 992px) {
-  .single-post main ul, .single-corsi main ul {
+  .single-post main ol, .single-post main ul, .single-corsi main ol, .single-corsi main ul {
     font-size: 1.125rem;
   }
 }
 
-.single-post main ul li, .single-corsi main ul li {
+.single-post main ol li, .single-post main ul li, .single-corsi main ol li, .single-corsi main ul li {
   margin-bottom: 0.75rem;
 }
 
-.single-post main img, .single-post main figure, .single-corsi main img, .single-corsi main figure {
-  border-radius: 0.75rem;
+.single-post main ol li::marker, .single-post main ul li::marker, .single-corsi main ol li::marker, .single-corsi main ul li::marker {
+  color: #534741;
+}
+
+.single-post main ol li a, .single-post main ul li a, .single-corsi main ol li a, .single-corsi main ul li a {
+  color: #534741;
+  font-weight: 700;
+}
+
+.single-post main ol li, .single-corsi main ol li {
+  list-style: decimal;
+}
+
+.single-post main ul li, .single-corsi main ul li {
+  list-style: disc;
+}
+
+.single-post main figcaption a, .single-corsi main figcaption a {
+  color: #FEFEFE;
+}
+
+.single-post main .wp-block-gallery figcaption, .single-corsi main .wp-block-gallery figcaption {
+  padding-top: 8px !important;
+  background: -webkit-gradient(linear, left bottom, left top, from(#534741), color-stop(70%, rgba(83, 71, 65, 0.7)), to(transparent)) !important;
+  background: linear-gradient(0deg, #534741, rgba(83, 71, 65, 0.7) 70%, transparent) !important;
+  border-radius: 0 0 0.75rem 0.75rem;
+}
+
+.single-post main sup, .single-corsi main sup {
+  vertical-align: super;
+}
+
+.single-post main sub, .single-corsi main sub {
+  vertical-align: sub;
 }
 
 .single-post main .wp-block-button__link, .single-corsi main .wp-block-button__link {
@@ -1564,6 +1600,7 @@ article a {
   letter-spacing: 2px;
   border-radius: 100px;
   padding: 16px 32px;
+  margin-top: 1.6rem;
   -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
           box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -1574,6 +1611,17 @@ article a {
   -webkit-box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.3), 0 4px 8px 3px rgba(60, 64, 67, 0.15);
           box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.3), 0 4px 8px 3px rgba(60, 64, 67, 0.15);
   background-color: #C7B299;
+}
+
+.single-post main .wp-block-buttons .wp-block-button:not(:first-of-type) .wp-block-button__link, .single-corsi main .wp-block-buttons .wp-block-button:not(:first-of-type) .wp-block-button__link {
+  color: #534741;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.single-post main .wp-block-buttons .wp-block-button:not(:first-of-type) .wp-block-button__link:hover, .single-corsi main .wp-block-buttons .wp-block-button:not(:first-of-type) .wp-block-button__link:hover {
+  text-decoration: underline;
 }
 
 .single-post main .wp-block-media-text .wp-block-media-text__media, .single-corsi main .wp-block-media-text .wp-block-media-text__media {
@@ -1596,11 +1644,87 @@ article a {
   }
 }
 
+.single-post main .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content, .single-corsi main .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
+  padding-left: 0;
+}
+
+.single-post main p.has-large-font-size, .single-corsi main p.has-large-font-size {
+  font-size: 1rem !important;
+}
+
+@media (min-width: 992px) {
+  .single-post main p.has-large-font-size, .single-corsi main p.has-large-font-size {
+    font-size: 1.125rem !important;
+  }
+}
+
+.single-post main .wp-block-file a:first-of-type, .single-corsi main .wp-block-file a:first-of-type {
+  display: inline-block;
+  word-break: break-all;
+  color: #FEFEFE;
+  background: #534741;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 1px;
+  border-radius: 100vw;
+  padding: 16px 32px;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+          box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  -webkit-transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  margin-bottom: 1.2rem;
+}
+
+.single-post main .wp-block-file a:first-of-type:hover, .single-corsi main .wp-block-file a:first-of-type:hover {
+  -webkit-box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.3), 0 4px 8px 3px rgba(60, 64, 67, 0.15);
+          box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.3), 0 4px 8px 3px rgba(60, 64, 67, 0.15);
+  background-color: #C7B299;
+  color: #534741;
+}
+
+.single-post main .wp-block-file a.wp-block-file__button, .single-corsi main .wp-block-file a.wp-block-file__button {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #534741;
+  font-size: 1rem;
+  font-weight: 700;
+  background: none;
+  border-radius: 0;
+  -webkit-transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.single-post main .wp-block-file a.wp-block-file__button:hover, .single-corsi main .wp-block-file a.wp-block-file__button:hover {
+  text-decoration: underline;
+}
+
+.single-post main .wp-block-embed.is-type-video.is-provider-youtube .wp-block-embed__wrapper, .single-corsi main .wp-block-embed.is-type-video.is-provider-youtube .wp-block-embed__wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.single-post main .wp-block-embed.is-type-video.is-provider-youtube .wp-block-embed__wrapper iframe, .single-corsi main .wp-block-embed.is-type-video.is-provider-youtube .wp-block-embed__wrapper iframe {
+  border-radius: .75rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.single-post main .wp-block-video video, .single-corsi main .wp-block-video video {
+  border-radius: .75rem;
+}
+
 .wp-block-image img {
   border-radius: 0.75rem !important;
 }
 
-.wp-block-group p {
+.wp-block-group p, .wp-block-group li {
   max-width: 80ch;
 }
 

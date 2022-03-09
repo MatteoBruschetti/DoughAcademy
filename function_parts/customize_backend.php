@@ -37,4 +37,16 @@
         </style>';
     }
     add_action('login_enqueue_scripts', 'DA_custom_login_logo');
+
+    function colorschemedoughacademy_admin_color_scheme() {
+        //Get the theme directory
+        $theme_dir = get_stylesheet_directory_uri();
+      
+        //Dough Academy
+        wp_admin_css_color( 'color-scheme-dough-academy', __( 'Dough Academy' ),
+          $theme_dir . '/css-parts/color-scheme-dough-academy.css',
+          array( '#534741', '#fff', '#dc0500' , '#c7b299')
+        );
+      }
+      add_action('admin_init', 'colorschemedoughacademy_admin_color_scheme');
 ?>
